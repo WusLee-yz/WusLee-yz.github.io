@@ -1,5 +1,5 @@
 ---
-title: "Perfect Competition and the Supply Curve"
+title: "ECO2011 C8：Perfect Competition"
 published: 2026-06-30
 description: ""
 category: "学校上的课"

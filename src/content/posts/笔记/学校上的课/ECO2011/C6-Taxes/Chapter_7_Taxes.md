@@ -10,7 +10,7 @@ tags:
 date: 2026-06-15
 course: ECO2011 - Microeconomics
 chapter: "7"
-title: "Taxes"
+title: "ECO2011 C6：Taxes"
 ---
 
 # Chapter 7 — Taxes（税收）

@@ -3,7 +3,7 @@ published: 2026-06-04
 description: ""
 category: "学校上的课"
 draft: false
-title: "Economic Models: Trade-offs and Trades"
+title: "ECO2011 C1：Economic Models — Trade-offs and Trades"
 course: ECO2011
 chapter: 2
 tags:

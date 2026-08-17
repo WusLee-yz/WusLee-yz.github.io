@@ -1,5 +1,5 @@
 ---
-title: "微观经济学 Short Essay 冲刺指南"
+title: "ECO2011 期末复习：Short Essay"
 published: 2026-07-19
 description: ""
 category: "学校上的课"

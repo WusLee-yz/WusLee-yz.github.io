@@ -1,5 +1,5 @@
 ---
-title: "Oligopolies & Game Theory"
+title: "ECO2011 C11：Oligopolies and Game Theory"
 published: 2026-07-06
 description: ""
 category: "学校上的课"

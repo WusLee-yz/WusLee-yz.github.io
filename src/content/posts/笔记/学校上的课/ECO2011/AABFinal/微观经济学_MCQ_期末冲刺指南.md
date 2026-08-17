@@ -1,5 +1,5 @@
 ---
-title: "微观经济学 Multiple Choice Questions 期末冲刺指南"
+title: "ECO2011 期末复习：Multiple Choice Questions"
 published: 2026-07-21
 description: ""
 category: "学校上的课"

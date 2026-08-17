@@ -1,5 +1,5 @@
 ---
-title: "Monopoly Markets and Price Discrimination"
+title: "ECO2011 C9：Monopoly and Price Discrimination"
 published: 2026-06-30
 description: ""
 category: "学校上的课"

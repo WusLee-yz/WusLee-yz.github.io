@@ -1,5 +1,5 @@
 ---
-title: "Chapter 11: 供给曲线背后 — 投入与成本"
+title: "ECO2011 C7：Inputs and Costs（投入与成本）"
 published: 2026-06-23
 description: ""
 category: "学校上的课"

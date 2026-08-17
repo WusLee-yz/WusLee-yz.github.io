@@ -1,5 +1,5 @@
 ---
-title: "Chapter 5: Price Controls and Quotas — Meddling with Markets"
+title: "ECO2011 C4：Price Controls and Quotas"
 published: 2026-06-07
 description: ""
 category: "学校上的课"
