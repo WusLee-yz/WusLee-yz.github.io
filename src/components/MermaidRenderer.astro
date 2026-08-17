@@ -1,0 +1,113 @@
+<script>
+let currentTheme = "";
+let renderInProgress = false;
+let renderAgain = false;
+
+function preferredTheme() {
+	return document.documentElement.classList.contains("dark") ? "dark" : "default";
+}
+
+async function renderMermaidDiagrams(force = false) {
+	if (renderInProgress) {
+		renderAgain = true;
+		return;
+	}
+
+	const theme = preferredTheme();
+	const diagrams = Array.from(document.querySelectorAll<HTMLElement>("pre.mermaid"));
+	const diagramsToRender = diagrams.filter(
+		(diagram) => force || diagram.dataset.mermaidRendered !== "true",
+	);
+	if (diagramsToRender.length === 0) return;
+
+	renderInProgress = true;
+	currentTheme = theme;
+	const { default: mermaid } = await import("mermaid");
+	mermaid.initialize({
+		startOnLoad: false,
+		theme,
+		securityLevel: "strict",
+		fontFamily: "Roboto, system-ui, sans-serif",
+		flowchart: {
+			htmlLabels: true,
+			useMaxWidth: true,
+		},
+	});
+
+	for (const [index, diagram] of diagramsToRender.entries()) {
+		const source = diagram.dataset.mermaidSource ?? diagram.textContent?.trim() ?? "";
+		if (!source) continue;
+
+		diagram.dataset.mermaidSource = source;
+		diagram.removeAttribute("data-processed");
+		diagram.removeAttribute("data-mermaid-rendered");
+		diagram.textContent = source;
+
+		try {
+			const id = `mermaid-${Date.now()}-${index}`;
+			const { svg, bindFunctions } = await mermaid.render(id, source);
+			diagram.innerHTML = svg;
+			diagram.dataset.mermaidRendered = "true";
+			bindFunctions?.(diagram);
+		} catch (error) {
+			diagram.classList.add("mermaid-error");
+			diagram.textContent = `Mermaid 图表渲染失败\n\n${source}`;
+			console.error("Failed to render Mermaid diagram", error);
+		}
+	}
+
+	renderInProgress = false;
+	if (renderAgain) {
+		renderAgain = false;
+		await renderMermaidDiagrams(true);
+	}
+}
+
+renderMermaidDiagrams();
+
+const themeObserver = new MutationObserver(() => {
+	if (preferredTheme() !== currentTheme) renderMermaidDiagrams(true);
+});
+themeObserver.observe(document.documentElement, {
+	attributes: true,
+	attributeFilter: ["class"],
+});
+
+const setupSwup = () => {
+	window.swup.hooks.on("page:view", () => renderMermaidDiagrams());
+};
+
+if (window.swup?.hooks) setupSwup();
+else document.addEventListener("swup:enable", setupSwup, { once: true });
+</script>
+
+<style is:global>
+.mermaid-wrapper {
+	margin: 1.5rem 0;
+	overflow-x: auto;
+	border: 1px solid var(--line-divider);
+	border-radius: 0.75rem;
+	background: var(--card-bg);
+	padding: 1rem;
+}
+
+.mermaid-wrapper .mermaid {
+	display: flex;
+	min-width: min-content;
+	justify-content: center;
+	margin: 0;
+	background: transparent;
+	padding: 0;
+}
+
+.mermaid-wrapper .mermaid svg {
+	max-width: 100%;
+	height: auto;
+}
+
+.mermaid-wrapper .mermaid-error {
+	display: block;
+	white-space: pre-wrap;
+	color: var(--primary);
+}
+</style>
