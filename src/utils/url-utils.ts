@@ -31,6 +31,17 @@ export function getCategoryUrl(category: string | null): string {
 	return url(`/archive/?category=${encodeURIComponent(category.trim())}`);
 }
 
+export function getSubcategoryUrl(
+	category: string | null,
+	subcategory: string | null,
+): string {
+	if (!subcategory || subcategory.trim() === "") return getCategoryUrl(category);
+	if (!category || category.trim() === "") return url("/archive/");
+	return url(
+		`/archive/?category=${encodeURIComponent(category.trim())}&subcategory=${encodeURIComponent(subcategory.trim())}`,
+	);
+}
+
 export function getDir(path: string): string {
 	const lastSlashIndex = path.lastIndexOf("/");
 	if (lastSlashIndex < 0) {

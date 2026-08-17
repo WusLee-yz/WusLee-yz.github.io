@@ -2,6 +2,7 @@
 import I18nKey from "../../i18n/i18nKey";
 import { i18n } from "../../i18n/translation";
 import { getCategoryList } from "../../utils/content-utils";
+import { Icon } from "astro-icon/components";
 import ButtonLink from "../control/ButtonLink.astro";
 import WidgetLayout from "./WidgetLayout.astro";
 
@@ -23,13 +24,95 @@ const style = Astro.props.style;
 <WidgetLayout name={i18n(I18nKey.categories)} id="categories" isCollapsed={isCollapsed} collapsedHeight={COLLAPSED_HEIGHT}
                 class={className} style={style}
 >
-    {categories.map((c) =>
-        <ButtonLink
-            url={c.url}
-            badge={String(c.count)}
-            label={`View all posts in the ${c.name.trim()} category`}
-        >
-            {c.name.trim()}
-        </ButtonLink>
-    )}
+    <category-tree>
+        {categories.map((c, index) => c.children.length > 0 ? (
+            <div class="category-node" data-category={c.name.trim()}>
+                <div class="flex items-center gap-1">
+                    <div class="min-w-0 flex-1">
+                        <ButtonLink
+                            url={c.url}
+                            badge={String(c.count)}
+                            label={`View all posts in the ${c.name.trim()} category`}
+                        >
+                            {c.name.trim()}
+                        </ButtonLink>
+                    </div>
+                    <button
+                        type="button"
+                        class="category-toggle btn-plain flex h-10 w-10 shrink-0 items-center justify-center rounded-lg"
+                        aria-expanded="false"
+                        aria-controls={`category-children-${index}`}
+                        aria-label={`展开 ${c.name.trim()} 的子分类`}
+                    >
+                        <Icon name="material-symbols:chevron-right-rounded" class="category-chevron text-xl transition-transform" />
+                    </button>
+                </div>
+                <div id={`category-children-${index}`} class="category-children ml-5 border-l border-[var(--line-divider)] pl-2" hidden>
+                    {c.children.map((child) => (
+                        <div data-subcategory={child.name.trim()}>
+                            <ButtonLink
+                                url={child.url}
+                                badge={String(child.count)}
+                                label={`View all posts in the ${c.name.trim()} / ${child.name.trim()} category`}
+                            >
+                                {child.name.trim()}
+                            </ButtonLink>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        ) : (
+            <ButtonLink
+                url={c.url}
+                badge={String(c.count)}
+                label={`View all posts in the ${c.name.trim()} category`}
+            >
+                {c.name.trim()}
+            </ButtonLink>
+        ))}
+    </category-tree>
 </WidgetLayout>
+
+<script>
+    class CategoryTree extends HTMLElement {
+        connectedCallback() {
+            if (this.dataset.initialized === "true") return;
+            this.dataset.initialized = "true";
+
+            const setExpanded = (button: HTMLButtonElement, expanded: boolean) => {
+                const targetId = button.getAttribute("aria-controls");
+                const children = targetId ? this.querySelector<HTMLElement>(`#${targetId}`) : null;
+                if (!children) return;
+
+                button.setAttribute("aria-expanded", String(expanded));
+                button.setAttribute(
+                    "aria-label",
+                    `${expanded ? "收起" : "展开"} ${button.closest<HTMLElement>(".category-node")?.dataset.category ?? ""} 的子分类`,
+                );
+                children.hidden = !expanded;
+                button.querySelector(".category-chevron")?.classList.toggle("rotate-90", expanded);
+            };
+
+            this.querySelectorAll<HTMLButtonElement>(".category-toggle").forEach((button) => {
+                button.addEventListener("click", () => {
+                    setExpanded(button, button.getAttribute("aria-expanded") !== "true");
+                });
+            });
+
+            const activeSubcategory = new URLSearchParams(window.location.search).get("subcategory");
+            if (activeSubcategory) {
+                const activeChild = Array.from(this.querySelectorAll<HTMLElement>("[data-subcategory]")).find(
+                    (child) => child.dataset.subcategory === activeSubcategory,
+                );
+                const button = activeChild
+                    ?.closest<HTMLElement>(".category-node")
+                    ?.querySelector<HTMLButtonElement>(".category-toggle");
+                if (button) setExpanded(button, true);
+            }
+        }
+    }
+
+    if (!customElements.get("category-tree")) {
+        customElements.define("category-tree", CategoryTree);
+    }
+</script>

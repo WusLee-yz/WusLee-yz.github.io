@@ -1,7 +1,7 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
-import { getCategoryUrl } from "@utils/url-utils.ts";
+import { getCategoryUrl, getSubcategoryUrl } from "@utils/url-utils.ts";
 
 // // Retrieve posts and sort them by publication date
 async function getRawSortedPosts() {
@@ -165,21 +165,29 @@ export async function getTagList(): Promise<Tag[]> {
 	return keys.map((key) => ({ name: key, count: countMap[key] }));
 }
 
+export type Subcategory = {
+	name: string;
+	count: number;
+	url: string;
+};
+
 export type Category = {
 	name: string;
 	count: number;
 	url: string;
+	children: Subcategory[];
 };
 
 export async function getCategoryList(): Promise<Category[]> {
 	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
 		return import.meta.env.PROD ? data.draft !== true : true;
 	});
-	const count: { [key: string]: number } = {};
-	allBlogPosts.forEach((post: { data: { category: string | null } }) => {
+	const count: Record<string, { count: number; subcategories: Record<string, number> }> = {};
+	allBlogPosts.forEach((post) => {
 		if (!post.data.category) {
 			const ucKey = i18n(I18nKey.uncategorized);
-			count[ucKey] = count[ucKey] ? count[ucKey] + 1 : 1;
+			count[ucKey] ??= { count: 0, subcategories: {} };
+			count[ucKey].count++;
 			return;
 		}
 
@@ -188,7 +196,14 @@ export async function getCategoryList(): Promise<Category[]> {
 				? post.data.category.trim()
 				: String(post.data.category).trim();
 
-		count[categoryName] = count[categoryName] ? count[categoryName] + 1 : 1;
+		count[categoryName] ??= { count: 0, subcategories: {} };
+		count[categoryName].count++;
+
+		const subcategoryName = post.data.subcategory?.trim();
+		if (subcategoryName) {
+			count[categoryName].subcategories[subcategoryName] =
+				(count[categoryName].subcategories[subcategoryName] ?? 0) + 1;
+		}
 	});
 
 	const lst = Object.keys(count).sort((a, b) => {
@@ -197,10 +212,18 @@ export async function getCategoryList(): Promise<Category[]> {
 
 	const ret: Category[] = [];
 	for (const c of lst) {
+		const children = Object.keys(count[c].subcategories)
+			.sort((a, b) => naturalCollator.compare(a, b))
+			.map((subcategory) => ({
+				name: subcategory,
+				count: count[c].subcategories[subcategory],
+				url: getSubcategoryUrl(c, subcategory),
+			}));
 		ret.push({
 			name: c,
-			count: count[c],
+			count: count[c].count,
 			url: getCategoryUrl(c),
+			children,
 		});
 	}
 	return ret;

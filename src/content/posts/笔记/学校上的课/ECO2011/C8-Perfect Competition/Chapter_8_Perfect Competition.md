@@ -3,6 +3,7 @@ title: "ECO2011 C8：Perfect Competition"
 published: 2026-06-30
 description: ""
 category: "学校上的课"
+subcategory: "ECO2011"
 draft: false
 tags:
   - microeconomics

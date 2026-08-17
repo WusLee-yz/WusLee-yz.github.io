@@ -3,7 +3,7 @@ import { Icon } from "astro-icon/components";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import { formatDateToYYYYMMDD } from "../utils/date-utils";
-import { getCategoryUrl, getTagUrl } from "../utils/url-utils";
+import { getCategoryUrl, getSubcategoryUrl, getTagUrl } from "../utils/url-utils";
 
 interface Props {
 	class: string;
@@ -11,6 +11,7 @@ interface Props {
 	updated?: Date;
 	tags: string[];
 	category: string | null;
+	subcategory?: string | null;
 	hideTagsForMobile?: boolean;
 	hideUpdateDate?: boolean;
 }
@@ -19,6 +20,7 @@ const {
 	updated,
 	tags,
 	category,
+	subcategory,
 	hideTagsForMobile = false,
 	hideUpdateDate = false,
 } = Astro.props;
@@ -58,6 +60,16 @@ const className = Astro.props.class;
                             hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
                 {category || i18n(I18nKey.uncategorized)}
             </a>
+            {category && subcategory && (
+                <>
+                    <div class="mx-1.5 text-[var(--meta-divider)] text-sm">/</div>
+                    <a href={getSubcategoryUrl(category, subcategory)} aria-label={`View all posts in the ${category} / ${subcategory} category`}
+                       class="link-lg transition text-50 text-sm font-medium
+                                    hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
+                        {subcategory}
+                    </a>
+                </>
+            )}
         </div>
     </div>
 
