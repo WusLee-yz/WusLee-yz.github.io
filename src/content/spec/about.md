@@ -1,9 +1,9 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于
 
-::github{repo="saicaca/fuwari"}
+你好，我是 WusLee。
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+这里是我记录生活随笔与学习过程的个人空间。我会把值得保留的思考、实践经验和阶段性收获整理在这里，也希望这些内容能给偶然到访的你带来一点启发。
+
+网站使用 [Astro](https://astro.build/) 构建，并基于开源主题 [Fuwari](https://github.com/saicaca/fuwari) 定制。
+
+::github{repo="WusLee-yz/WusLee-yz.github.io"}
