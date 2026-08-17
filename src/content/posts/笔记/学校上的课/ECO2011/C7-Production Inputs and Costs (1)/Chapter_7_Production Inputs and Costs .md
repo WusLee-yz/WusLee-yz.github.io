@@ -1,4 +1,9 @@
 ---
+title: "Chapter 11: 供给曲线背后 — 投入与成本"
+published: 2026-06-23
+description: ""
+category: "学校上的课"
+draft: false
 tags:
   - microeconomics
   - production

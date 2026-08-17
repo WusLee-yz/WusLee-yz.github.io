@@ -1,4 +1,8 @@
 ---
+published: 2026-08-11
+description: ""
+category: "自己学的东西"
+draft: false
 title: "Chapter 3 - Optimal State Values and Bellman Optimality Equation"
 aliases:
   - 最优状态价值与贝尔曼最优方程

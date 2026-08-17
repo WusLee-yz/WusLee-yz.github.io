@@ -1,4 +1,9 @@
 ---
+title: "Externalities"
+published: 2026-07-06
+description: ""
+category: "学校上的课"
+draft: false
 tags:
   - microeconomics
   - externalities
@@ -6,7 +11,6 @@ tags:
   - environmental-economics
 date: 2026-07-06
 course: Microeconomics
-source: lecture_ch16a.pptx
 ---
 
 # Externalities

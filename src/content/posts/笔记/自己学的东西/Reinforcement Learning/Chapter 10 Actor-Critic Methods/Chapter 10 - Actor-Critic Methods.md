@@ -1,4 +1,8 @@
 ---
+published: 2026-08-11
+description: ""
+category: "自己学的东西"
+draft: false
 title: "Chapter 10 - Actor-Critic Methods"
 aliases:
   - Actor-Critic 方法

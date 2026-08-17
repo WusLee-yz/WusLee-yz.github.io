@@ -1,4 +1,8 @@
 ---
+published: 2026-08-13
+description: ""
+category: "自己学的东西"
+draft: false
 title: "Chapter 2 - State Values and Bellman Equation"
 aliases:
   - 状态价值与贝尔曼方程

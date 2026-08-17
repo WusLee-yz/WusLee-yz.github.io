@@ -1,4 +1,8 @@
 ---
+published: 2026-08-11
+description: ""
+category: "自己学的东西"
+draft: false
 title: "Chapter 6 - Stochastic Approximation"
 aliases:
   - 随机逼近

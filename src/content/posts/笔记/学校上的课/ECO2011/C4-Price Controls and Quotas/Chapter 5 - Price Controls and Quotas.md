@@ -1,4 +1,9 @@
 ---
+title: "Chapter 5: Price Controls and Quotas — Meddling with Markets"
+published: 2026-06-07
+description: ""
+category: "学校上的课"
+draft: false
 tags:
   - ECO2011
   - Microeconomics
@@ -10,7 +15,6 @@ course: ECO2011 Microeconomics
 chapter: "Chapter 5: Price Controls and Quotas"
 textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 ---
-
 
 # Chapter 5: Price Controls and Quotas — Meddling with Markets
 

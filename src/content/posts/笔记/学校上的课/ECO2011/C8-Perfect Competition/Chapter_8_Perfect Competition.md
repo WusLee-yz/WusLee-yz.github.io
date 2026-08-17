@@ -1,4 +1,9 @@
 ---
+title: "Perfect Competition and the Supply Curve"
+published: 2026-06-30
+description: ""
+category: "学校上的课"
+draft: false
 tags:
   - microeconomics
   - perfect-competition

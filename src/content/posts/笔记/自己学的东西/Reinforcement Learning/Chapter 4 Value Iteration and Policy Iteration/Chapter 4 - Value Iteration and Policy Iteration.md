@@ -1,4 +1,8 @@
 ---
+published: 2026-08-11
+description: ""
+category: "自己学的东西"
+draft: false
 title: "Chapter 4 - Value Iteration and Policy Iteration"
 aliases:
   - 价值迭代与策略迭代

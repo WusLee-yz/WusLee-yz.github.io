@@ -1,4 +1,8 @@
 ---
+published: 2026-08-11
+description: ""
+category: "自己学的东西"
+draft: false
 title: "Chapter 8 - Value Function Methods"
 aliases:
   - 价值函数方法

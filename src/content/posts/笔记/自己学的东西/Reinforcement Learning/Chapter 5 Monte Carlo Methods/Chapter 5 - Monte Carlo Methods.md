@@ -1,4 +1,8 @@
 ---
+published: 2026-08-11
+description: ""
+category: "自己学的东西"
+draft: false
 title: "Chapter 5 - Monte Carlo Methods"
 aliases:
   - 蒙特卡洛方法

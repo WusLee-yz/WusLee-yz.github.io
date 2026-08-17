@@ -1,4 +1,8 @@
 ---
+published: 2026-08-11
+description: ""
+category: "自己学的东西"
+draft: false
 title: "Chapter 9 - Policy Gradient Methods"
 aliases:
   - 策略梯度方法

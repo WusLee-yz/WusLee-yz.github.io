@@ -1,4 +1,9 @@
 ---
+title: "Chapter 6: Elasticity（弹性）"
+published: 2026-06-15
+description: ""
+category: "学校上的课"
+draft: false
 tags:
   - economics
   - microeconomics

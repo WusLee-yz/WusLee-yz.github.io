@@ -1,4 +1,9 @@
 ---
+title: "Chapter 4: Consumer and Producer Surplus"
+published: 2026-06-04
+description: ""
+category: "学校上的课"
+draft: false
 tags:
   - ECO2011
   - microeconomics

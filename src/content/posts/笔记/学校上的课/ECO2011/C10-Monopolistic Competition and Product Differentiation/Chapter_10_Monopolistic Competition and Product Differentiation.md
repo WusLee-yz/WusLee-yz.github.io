@@ -1,11 +1,15 @@
 ---
+title: "Monopolistic Competition and Product Differentiation"
+published: 2026-07-06
+description: ""
+category: "学校上的课"
+draft: false
 tags:
   - microeconomics
   - monopolistic-competition
   - product-differentiation
 date: 2026-07-06
 course: Microeconomics
-source: lecture_ch15a.pptx
 ---
 
 # Monopolistic Competition and Product Differentiation

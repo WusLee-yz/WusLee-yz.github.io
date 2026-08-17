@@ -1,4 +1,9 @@
 ---
+title: "Oligopolies & Game Theory"
+published: 2026-07-06
+description: ""
+category: "学校上的课"
+draft: false
 tags:
   - microeconomics
   - oligopoly
@@ -6,7 +11,6 @@ tags:
   - imperfect-competition
 date: 2026-07-06
 course: Microeconomics
-source: lecture_ch14a.pptx
 ---
 
 # Oligopolies & Game Theory

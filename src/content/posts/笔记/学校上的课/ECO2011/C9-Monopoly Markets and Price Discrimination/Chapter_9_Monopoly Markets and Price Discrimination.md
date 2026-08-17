@@ -1,4 +1,9 @@
 ---
+title: "Monopoly Markets and Price Discrimination"
+published: 2026-06-30
+description: ""
+category: "学校上的课"
+draft: false
 tags:
   - microeconomics
   - monopoly

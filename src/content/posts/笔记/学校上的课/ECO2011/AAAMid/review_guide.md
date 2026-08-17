@@ -1,3 +1,11 @@
+---
+title: "ECO2011 期中考试复习指南"
+published: 2026-06-24
+description: ""
+category: "学校上的课"
+draft: false
+---
+
 # ECO2011 期中考试复习指南
 
 > **考试范围**: Chapter 2–7, Krugman & Wells *Microeconomics* 3rd Edition  
