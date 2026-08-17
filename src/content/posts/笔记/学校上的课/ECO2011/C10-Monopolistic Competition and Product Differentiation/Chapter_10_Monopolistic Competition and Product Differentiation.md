@@ -16,8 +16,8 @@ course: Microeconomics
 
 本章讨论一种介于完全竞争与垄断之间的市场结构：垄断竞争 (Monopolistic Competition)。它既有“竞争”的一面，即行业中存在许多企业、长期可以自由进入和退出；也有“垄断”的一面，即每家企业销售的产品并不完全相同，因此面对向下倾斜的需求曲线，并拥有一定的定价能力。
 
-![[Assets/slide_1.png]]
-![[Assets/slide_2.png]]
+![slide 1](Assets/slide_1.png)
+![slide 2](Assets/slide_2.png)
 
 ## 1. 四种市场结构与 Monopolistic Competition 的位置
 
@@ -26,8 +26,8 @@ course: Microeconomics
 > [!info] 核心定义：垄断竞争 (Monopolistic Competition)
 > Monopolistic Competition 是一种市场结构：行业中有许多相互竞争的生产者；每个生产者销售差异化产品 (Differentiated Product)；企业面对向下倾斜的需求曲线，因此不是价格接受者 (Price Taker)；长期存在自由进入和退出 (Free Entry and Exit)；长期均衡中企业获得零经济利润 (Zero Economic Profit)。
 
-![[Assets/slide_3.png]]
-![[Assets/slide_4.png]]
+![slide 3](Assets/slide_3.png)
+![slide 4](Assets/slide_4.png)
 
 Monopolistic Competition 的关键不是企业完全没有竞争，而是每家企业通过产品差异化 (Product Differentiation) 让自己的产品“不完全等同于别人家的产品”。因此，消费者不会只根据价格选择商品，企业也就不必像完全竞争企业那样被动接受市场价格。
 
@@ -38,8 +38,8 @@ Monopolistic Competition 的关键不是企业完全没有竞争，而是每家�
 
 在 Oligopoly 中，Product Differentiation 可以降低竞争强度并帮助企业提高利润；但在 Monopolistic Competition 中，它更为关键。因为行业中企业数量很多，公开合谋 (Collusion) 或默契合作 (Tacit Cooperation) 几乎不可行，企业获得市场力量 (Market Power) 的主要方式就是让消费者认为自己的产品有独特性。
 
-![[Assets/slide_5.png]]
-![[Assets/slide_6.png]]
+![slide 5](Assets/slide_5.png)
+![slide 6](Assets/slide_6.png)
 
 Product Differentiation 主要有三种形式：
 
@@ -49,11 +49,11 @@ Product Differentiation 主要有三种形式：
 | Differentiation by location | 按地理位置或便利性区分 | 离家近的 dry cleaner vs. 远但便宜的 dry cleaner |
 | Differentiation by quality | 按质量层级区分 | ordinary chocolate vs. gourmet chocolate |
 
-![[Assets/slide_7.png]]
+![slide 7](Assets/slide_7.png)
 
 产品差异化行业有两个同时存在的特征。第一，卖方之间仍然竞争同一批消费者，因此新企业进入会减少既有企业在任何给定价格下能卖出的数量。第二，消费者从多样性 (Diversity) 中获得价值：即使价格更高，更多选择也可能提高消费者福利。
 
-![[Assets/slide_8.png]]
+![slide 8](Assets/slide_8.png)
 
 ### Ford 与 GM 的案例：规模经济与多样性的冲突
 
@@ -61,7 +61,7 @@ Henry Ford 的早期策略是只提供单一车型和颜色，从而最大化规
 
 这个案例说明，最低成本并不总是消费者唯一关心的目标。Monopolistic Competition 的福利评价必须同时考虑成本效率与产品多样性。
 
-![[Assets/slide_9.png]]
+![slide 9](Assets/slide_9.png)
 
 > [!question] 思考题
 > 同一行业中的快餐店、加油站或巧克力品牌究竟是在产品本身上不同，还是主要在消费者心智中不同？经济学分析不要求二者只能选其一；只要差异影响需求弹性和消费者选择，它就会影响企业定价能力。
@@ -70,16 +70,16 @@ Henry Ford 的早期策略是只提供单一车型和颜色，从而最大化规
 
 Monopolistic Competition 这个名字本身就揭示了它的双重性质。一方面，每个企业销售独特产品，所以像垄断者一样面对向下倾斜的需求曲线 (Downward-Sloping Demand Curve)，具有有限的定价能力；另一方面，它又不像纯粹垄断者，因为行业中还有许多替代品，企业销量取决于其他企业的价格和产品选择。
 
-![[Assets/slide_10.png]]
+![slide 10](Assets/slide_10.png)
 
 短期中，垄断竞争企业与垄断企业使用相同的利润最大化逻辑：选择边际收益等于边际成本的产量，即 MR = MC。由于需求曲线向下倾斜，边际收益 (Marginal Revenue, MR) 低于价格 (Price, P)，所以企业先在 MR = MC 处找到产量，再回到需求曲线上决定价格。
 
 > [!warning] 考点：短期决策规则
 > Monopolistically Competitive Firm 的短期利润最大化条件是 MR = MC。价格不是在 MC 曲线上读出，而是在对应产量的 Demand Curve 上读出。若 P > ATC，企业获得 Profit；若 P < ATC，企业承受 Loss，但只要继续生产比停产损失更小，就会选择亏损经营。
 
-![[Assets/slide_11.png]]
-![[Assets/slide_12.png]]
-![[Assets/slide_13.png]]
+![slide 11](Assets/slide_11.png)
+![slide 12](Assets/slide_12.png)
+![slide 13](Assets/slide_13.png)
 
 | Short-Run Outcome   | Condition             | Economic Meaning            |
 | ------------------- | --------------------- | --------------------------- |
@@ -92,16 +92,16 @@ Monopolistic Competition 这个名字本身就揭示了它的双重性质。一�
 
 长期中，自由进入和退出会消除短期利润或亏损。如果典型企业获得正经济利润，新企业会进入行业，既有企业的需求曲线和边际收益曲线向左移动，因为消费者被更多替代品分流；这会降低既有企业销量、价格和利润。相反，如果典型企业亏损，一些企业退出，剩余企业的需求曲线和边际收益曲线向右移动，亏损逐渐缩小。
 
-![[Assets/slide_14.png]]
-![[Assets/slide_15.png]]
-![[Assets/slide_16.png]]
+![slide 14](Assets/slide_14.png)
+![slide 15](Assets/slide_15.png)
+![slide 16](Assets/slide_16.png)
 
 > [!info] 核心定义：零利润均衡 (Zero-Profit Equilibrium)
 > Zero-Profit Equilibrium 是 Monopolistic Competition 的长期均衡状态：进入和退出停止，每家企业在利润最大化产量处刚好收支相抵，Price = Average Total Cost (ATC)，企业获得零经济利润。
 
 在长期零利润均衡中，每家企业的需求曲线与平均总成本曲线 (Average Total Cost, ATC) 在利润最大化产量处相切 (Tangency)。这意味着企业像垄断者一样仍有向下倾斜的需求曲线，但又无法长期保留垄断利润。因此可以把垄断竞争企业理解为“没有长期垄断利润的垄断者”。
 
-![[Assets/slide_17.png]]
+![slide 17](Assets/slide_17.png)
 
 ## 5. 与 Perfect Competition 的比较：Mark-up 与 Excess Capacity
 
@@ -110,8 +110,8 @@ Monopolistic Competition 这个名字本身就揭示了它的双重性质。一�
 > [!info] 核心定义：过剩产能 (Excess Capacity)
 > Excess Capacity 指企业在长期均衡中生产的产量低于最小化 Average Total Cost 的产量。Monopolistic Competition 中企业没有在最低平均成本点生产，因此单位成本高于完全竞争中的类似企业。
 
-![[Assets/slide_18.png]]
-![[Assets/slide_19.png]]
+![slide 18](Assets/slide_18.png)
+![slide 19](Assets/slide_19.png)
 
 | Dimension       | Perfect Competition           | Monopolistic Competition      |
 | --------------- | ----------------------------- | ----------------------------- |
@@ -124,7 +124,7 @@ Monopolistic Competition 这个名字本身就揭示了它的双重性质。一�
 
 这也引出一个重要福利问题：Monopolistic Competition 是否低效率？从成本角度看，它价格更高、产量更少、P > MC，存在一些本可互利的交易没有发生。但从消费者选择角度看，更高价格的一部分代价可能被产品多样性带来的价值抵消。因此，Excess Capacity 不一定自动意味着社会福利更低，评价要看消费者对多样性的价值有多高。
 
-![[Assets/slide_20.png]]
+![slide 20](Assets/slide_20.png)
 
 > [!question] 课堂思考
 > 你更愿意住在只有一家低价餐馆的地方，还是有几家餐馆但价格略高的地方？这个问题对应 Monopolistic Competition 的核心权衡：Lower Prices vs. Greater Product Diversity。
@@ -133,8 +133,8 @@ Monopolistic Competition 这个名字本身就揭示了它的双重性质。一�
 
 产品差异化讨论离不开广告 (Advertising) 和品牌名称 (Brand Name)。广告在不同产品中的重要性差异很大：高度差异化的消费品常把收入的 10-20% 用于广告；工业品广告较少；同质化商品几乎没有广告。完全竞争企业通常不做广告，因为它们可以按市场价格卖出全部产量；而销售差异化产品并且价格高于边际成本的企业，有强烈动机通过广告吸引买者、降低需求价格弹性 (Price Elasticity of Demand)，并维持更高 Mark-up。
 
-![[Assets/slide_21.png]]
-![[Assets/slide_22.png]]
+![slide 21](Assets/slide_21.png)
+![slide 22](Assets/slide_22.png)
 
 | Product Type | Advertising Spending | 经济含义 |
 | --- | --- | --- |
@@ -147,9 +147,9 @@ Monopolistic Competition 这个名字本身就揭示了它的双重性质。一�
 
 广告的争议在于它既可能有价值，也可能浪费资源。批评者认为，广告操纵消费者偏好，制造原本不存在的欲望，夸大产品差异，培养品牌忠诚，从而阻碍竞争，使消费者不再关心相似商品之间的价格差异。支持者则认为，广告向消费者传递价格、质量、可得性等信息，帮助消费者更好选择，也能让新企业更容易进入市场，增强竞争。
 
-![[Assets/slide_23.png]]
-![[Assets/slide_24.png]]
-![[Assets/slide_25.png]]
+![slide 23](Assets/slide_23.png)
+![slide 24](Assets/slide_24.png)
+![slide 25](Assets/slide_25.png)
 
 ### 眼镜广告案例：Informative Advertising
 
@@ -160,7 +160,7 @@ Monopolistic Competition 这个名字本身就揭示了它的双重性质。一�
 | States that prohibited advertising | $33 | 消费者信息不足，价格较高 |
 | States that did not restrict advertising | $26 | 广告提供替代选择信息，竞争增强 |
 
-![[Assets/slide_26.png]]
+![slide 26](Assets/slide_26.png)
 
 ## 7. Brand Name：质量信号还是人为差异？
 
@@ -169,9 +169,9 @@ Monopolistic Competition 这个名字本身就揭示了它的双重性质。一�
 > [!info] 核心概念：昂贵信号 (Costly Signal)
 > Costly Signal 指某种高成本行为本身传递信息。品牌广告的具体内容可能并不重要，关键是企业愿意为品牌投入大量资源，这可能向消费者暗示产品质量、企业承诺和长期经营预期。
 
-![[Assets/slide_27.png]]
-![[Assets/slide_28.png]]
-![[Assets/slide_29.png]]
+![slide 27](Assets/slide_27.png)
+![slide 28](Assets/slide_28.png)
+![slide 29](Assets/slide_29.png)
 
 | View on Brand Names | Main Argument | Welfare Implication |
 | --- | --- | --- |
@@ -182,8 +182,8 @@ Monopolistic Competition 这个名字本身就揭示了它的双重性质。一�
 
 Monopolistic Competition 位于 Perfect Competition 和 Monopoly 之间，因此福利评价也处在二者之间。短期中，P > MC 带来类似垄断定价的 Deadweight Loss，一些本可提升福利的交易没有发生；企业还可能把资源用于纯粹制造差异化的广告。长期中，自由进入虽然消除经济利润，却可能导致过多企业进入，重复承担固定成本 (Duplication of Fixed Costs)，并让每家企业都在低于最低 ATC 的产量上生产。
 
-![[Assets/slide_30.png]]
-![[Assets/slide_31.png]]
+![slide 30](Assets/slide_30.png)
+![slide 31](Assets/slide_31.png)
 
 | Time Horizon | Source of Inefficiency | Explanation |
 | --- | --- | --- |
@@ -201,12 +201,12 @@ Monopolistic Competition 位于 Perfect Competition 和 Monopoly 之间，因此
 
 Monopolistic Competition 是由许多企业、差异化产品和长期自由进入退出构成的市场结构。Product Differentiation 可以按风格或类型、位置、质量等方式实现，是企业获得 Market Power 的核心来源。短期中，企业像垄断者一样按照 MR = MC 选择产量，并可能获得 Profit 或承受 Loss；长期中，进入与退出推动企业达到 Zero-Profit Equilibrium，需求曲线与 ATC 曲线在利润最大化产量处相切。
 
-![[Assets/slide_32.png]]
+![slide 32](Assets/slide_32.png)
 
 长期均衡下，企业虽然获得零经济利润，但仍有 P > MC 的 Mark-up，并且存在 Excess Capacity。Advertising 和 Brand Name 既可能提供有价值信息、促进竞争，也可能操纵偏好、制造人为差异并浪费资源。现实中二者通常兼具经济价值与经济浪费两面。
 
-![[Assets/slide_33.png]]
-![[Assets/slide_34.png]]
+![slide 33](Assets/slide_33.png)
+![slide 34](Assets/slide_34.png)
 
 ## 10. Key Terms
 
@@ -226,4 +226,4 @@ Monopolistic Competition 是由许多企业、差异化产品和长期自由进�
 | Brand Name | 品牌名称 | 可能是质量信号，也可能制造人为差异 |
 | Costly Signal | 昂贵信号 | 高成本广告支出本身传递质量或承诺信息 |
 
-![[Assets/slide_35.png]]
+![slide 35](Assets/slide_35.png)

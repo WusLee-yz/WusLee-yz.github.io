@@ -68,7 +68,7 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 
 > 这张表与传统的 Demand Schedule（需求表）逻辑一致——当价格高于某人的 WTP 时，该消费者不会购买；当价格等于或低于 WTP 时，消费者才会购买。
 
-![[slide_8.png |Figure 4-1 & 4-2: Consumer Surplus in the Used Textbook Market]]
+![Figure 4-1 & 4-2: Consumer Surplus in the Used Textbook Market](Assets/slide_8.png)
 
 > [!info] 图 4-1 解读（来自演讲者备注）
 > 市场中仅有五位潜在消费者，因此需求曲线呈阶梯状。每一个台阶代表一位消费者，其高度表示该消费者的 WTP。Aleisha 的 WTP 最高，为 $59；Brad 为 $45；Claudia 为 $35；Darren 为 $25；Edwina 最低，为 $10。当价格为 $59 时，需求量仅为一本（Aleisha）；价格为 $45 时，需求量为两本（Aleisha + Brad），以此类推，直到价格降至 $10 时，五位学生才全部愿意购买。
@@ -89,7 +89,7 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 
 当市场中有大量潜在买家时，需求曲线变得平滑。以 iPad 为例：
 
-![[slide_9.png|Figure 4-3: Consumer Surplus (iPads)]]
+![Figure 4-3: Consumer Surplus (iPads)](Assets/slide_9.png)
 
 > [!info] 图 4-3 解读（来自演讲者备注）
 > 由于存在大量潜在买家，iPad 的需求曲线是平滑的。当价格为 $500 时，需求量为 100 万台。此价格下的消费者剩余等于阴影区域——需求曲线下方、价格上方的面积。这个面积代表了消费者在价格为 $500 时购买和消费 iPad 所获的总净收益。
@@ -107,7 +107,7 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 
 ### 4.1 教科书市场：价格从 $30 降至 $20
 
-![[slide_11.png|Figure 4-4: Consumer Surplus and a Fall in the Price of Used Textbooks]]
+![Figure 4-4: Consumer Surplus and a Fall in the Price of Used Textbooks](Assets/slide_11.png)
 
 > [!info] 图 4-4 解读（来自演讲者备注）
 > 价格从 $30 降至 $20 带来的消费者剩余增加包含两部分：
@@ -119,7 +119,7 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 
 ### 4.2 iPad 市场：价格从 $2,000 降至 $500
 
-![[slide_12.png|Figure 4-5: A Fall in the Market Price Increases Consumer Surplus]]
+![Figure 4-5: A Fall in the Market Price Increases Consumer Surplus](Assets/slide_12.png)
 
 > [!info] 图 4-5 解读（来自演讲者备注）
 > iPad 价格从 $2,000 降至 $500，导致需求量和消费者剩余同时增加。总消费者剩余的变化等于两个阴影区域之和：
@@ -157,7 +157,7 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 - Donna (成本 $35 > $30) 和 Engelbert (成本 $45 > $30) 不会出售，剩余为 $0
 - **总生产者剩余 = $25 + $15 + $5 = $45**
 
-![[slide_14.png|Figure 4-7: Producer Surplus in the Used-Textbook Market]]
+![Figure 4-7: Producer Surplus in the Used-Textbook Market](Assets/slide_14.png)
 
 > [!info] 图 4-7 解读（来自演讲者备注）
 > 在价格 $30 时，Andrew、Betty 和 Carlos 各自卖出一本书并获得生产者剩余（阴影矩形）。Donna 和 Engelbert 的成本高于 $30，故不愿出售，剩余为零。总生产者剩余为整个阴影区域 → $25 + $15 + $5 = $45。
@@ -166,7 +166,7 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 
 以小麦 (wheat) 市场为例：
 
-![[slide_15.png|Figure 4-8: Producer Surplus (Wheat)]]
+![Figure 4-8: Producer Surplus (Wheat)](Assets/slide_15.png)
 
 > [!info] 图 4-8 解读（来自演讲者备注）
 > 这是小麦的供给曲线。在每蒲式耳 $5 的价格下，农民供应 100 万蒲式耳。此价格下的生产者剩余等于阴影区域——供给曲线上方、价格下方的面积。这是生产者（农民）以 $5 的价格供应产品所获得的总收益。
@@ -184,7 +184,7 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 
 ### 6.1 小麦市场：价格从 $5 升至 $7
 
-![[slide_17.png|Figure 4-9: A Rise in the Price Increases Producer Surplus]]
+![Figure 4-9: A Rise in the Price Increases Producer Surplus](Assets/slide_17.png)
 
 > [!info] 图 4-9 解读（来自演讲者备注）
 > 小麦价格从 $5 升至 $7，供给量从 100 万增至 150 万蒲式耳：
@@ -204,7 +204,7 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 
 ### 7.1 总剩余的图示
 
-![[slide_20.png|Figure 4-11: Total Surplus]]
+![Figure 4-11: Total Surplus](Assets/slide_20.png)
 
 > [!info] 图 4-11 解读（来自演讲者备注）
 > 在二手教科书市场中，均衡价格为 $30，均衡数量为 1,000 本书：
@@ -244,22 +244,22 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 
 #### 8.1.1 重新分配消费降低消费者剩余
 
-![[slide_24.png|Figure 4-12: Reallocating Consumption Lowers Consumer Surplus]]
+![Figure 4-12: Reallocating Consumption Lowers Consumer Surplus](Assets/slide_24.png)
 
 > [!info] 图 4-12 解读（来自演讲者备注）
 > Ana (点 A) 的 WTP 为 $35，Bob (点 B) 的 WTP 仅为 $25。在市场均衡价格 $30 下，Ana 购买了一本书而 Bob 没有。如果我们将书从 Ana 手中拿走交给 Bob，消费者剩余将减少 $10 (即 $35 − $25)，因此总剩余也减少 $10。
 
 #### 8.1.2 重新分配销售降低生产者剩余
 
-![[slide_25.png|Figure 4-13: Reallocating Sales Lowers Producer Surplus]]
+![Figure 4-13: Reallocating Sales Lowers Producer Surplus](Assets/slide_25.png)
 
 > [!info] 图 4-13 解读（来自演讲者备注）
 > Yvonne (点 Y) 的成本为 $35，Xavier (点 X) 的成本为 $25。在市场均衡价格 $30 下，Xavier 卖书而 Yvonne 不卖。如果我们阻止 Xavier 出售，并强迫 Yvonne 出售她的书，生产者剩余将减少 $10 (即 $35 − $25)，总剩余也随之减少 $10。
 
 #### 8.1.3 改变交易数量降低总剩余
 
-![[slide_26.png|Figure 4-14a: Changing the Quantity Lowers Total Surplus — Below Equilibrium]]
-![[slide_27.png|Figure 4-14b: Changing the Quantity Lowers Total Surplus — Above Equilibrium]]
+![Figure 4-14a: Changing the Quantity Lowers Total Surplus — Below Equilibrium](Assets/slide_26.png)
+![Figure 4-14b: Changing the Quantity Lowers Total Surplus — Above Equilibrium](Assets/slide_27.png)
 
 > [!info] 图 4-14 解读（来自演讲者备注）
 > - **低于均衡数量 (Q < 1,000)**：如果阻止 Xavier (点 X, 成本 $25) 将书卖给像 Ana (点 A, WTP $35) 这样的人，总剩余将下降 $10 (= $35 − $25)。即，任何低于均衡数量 1,000 的交易水平都会使总剩余下降。
@@ -269,7 +269,7 @@ source: "Krugman & Wells, Microeconomics, 3rd Edition - Chapter 4"
 
 ### 8.2 均衡数量的效率
 
-![[slide_28.png|The Efficiency of the Equilibrium Quantity]]
+![The Efficiency of the Equilibrium Quantity](Assets/slide_28.png)
 
 上图清晰地展示了为什么均衡数量是最优的：
 - **在均衡数量左侧** (如 $Q_1$)：买家估值 (Value to Buyers) > 卖家成本 (Cost to Sellers) → 存在尚未实现的互惠交易，应增加产量

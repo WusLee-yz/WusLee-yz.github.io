@@ -16,11 +16,11 @@ chapter: "Chapter 6 — Elasticity"
 
 # Chapter 6: Elasticity（弹性）
 
-![[slide_1.png]]
+![slide 1](Assets/slide_1.png)
 
 ## 本章学习目标 (What You Will Learn in This Chapter)
 
-![[slide_3.png]]
+![slide 3](Assets/slide_3.png)
 
 本章围绕经济学中一个核心工具——**弹性 (Elasticity)** 展开。弹性是衡量一个经济变量对另一个经济变量变化反应程度的通用指标。通过本章的学习，你将掌握以下核心问题：
 
@@ -35,7 +35,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ## 一、需求的价格弹性 (Price Elasticity of Demand)
 
-![[slide_2.png]]
+![slide 2](Assets/slide_2.png)
 
 ### 1.1 弹性的直观理解
 
@@ -49,7 +49,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 1.2 正式定义
 
-![[slide_4.png]]
+![slide 4](Assets/slide_4.png)
 
 > [!info] 需求的价格弹性 (Price Elasticity of Demand)
 > 需求的价格弹性是需求量变动的百分比与价格变动的百分比之间的比率（在沿需求曲线移动时，我们省略负号，取绝对值）。
@@ -60,7 +60,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 1.3 一个具体例子：疫苗接种需求
 
-![[slide_5.png]]
+![slide 5](Assets/slide_5.png)
 
 以疫苗接种为例：当每支疫苗的价格为 $20 时，全球年需求量为 1000 万支（点 A）。当价格上升到 $21 时，需求量下降到 990 万支（点 B）。价格仅上涨了 $1，需求量就减少了 10 万支——这个变化是大还是小？弹性给了我们一个标准化的衡量方式。
 
@@ -68,9 +68,9 @@ chapter: "Chapter 6 — Elasticity"
 
 ## 二、弹性的计算：中点法 (The Midpoint Method)
 
-![[slide_6.png]]
+![slide 6](Assets/slide_6.png)
 
-![[slide_7.png]]
+![slide 7](Assets/slide_7.png)
 
 在计算百分比变化时，一个常见的问题是：从 A 点到 B 点计算的百分比变化，与从 B 点到 A 点计算的百分比变化不同。为了解决这个问题，经济学家使用**中点法 (Midpoint Method)**。
 
@@ -81,7 +81,7 @@ chapter: "Chapter 6 — Elasticity"
 >
 > 其中，$(\text{Average Value of } X = \frac{\text{Starting Value + Final Value}}{2})$
 
-![[slide_8.png]]
+![slide 8](Assets/slide_8.png)
 
 使用中点法，无论从哪个方向计算，弹性值都保持一致，这使其成为经济学中计算弹性的标准方法。
 
@@ -89,7 +89,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ## 三、需求价格弹性的实际估算值
 
-![[slide_9.png]]
+![slide 9](Assets/slide_9.png)
 
 下表展示了一些常见商品的估计需求价格弹性：
 
@@ -117,7 +117,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 4.1 完全非弹性需求 (Perfectly Inelastic Demand)
 
-![[slide_11.png]]
+![slide 11](Assets/slide_11.png)
 
 > [!info] 完全非弹性需求 (Perfectly Inelastic Demand)
 > 当需求量完全不随价格变化而变化时，需求是 **perfectly inelastic** 的。此时需求曲线是一条**垂直线 (vertical line)**，价格弹性为 **0**。
@@ -126,7 +126,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 4.2 完全弹性需求 (Perfectly Elastic Demand)
 
-![[slide_12.png]]
+![slide 12](Assets/slide_12.png)
 
 > [!info] 完全弹性需求 (Perfectly Elastic Demand)
 > 当任何价格上涨都会使需求量降为零时，需求是 **perfectly elastic** 的。此时需求曲线是一条**水平线 (horizontal line)**，价格弹性为 **∞（无穷大）**。
@@ -139,7 +139,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 5.1 单位弹性需求 (Unit-Elastic Demand)
 
-![[slide_14.png]]
+![slide 14](Assets/slide_14.png)
 
 > [!info] 单位弹性需求 (Unit-Elastic Demand)
 > 当价格弹性 **恰好等于 1** 时，需求是 **unit-elastic** 的。此时价格变动的百分比恰好等于需求量变动的百分比。
@@ -148,7 +148,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 5.2 非弹性需求 (Inelastic Demand)
 
-![[slide_15.png]]
+![slide 15](Assets/slide_15.png)
 
 > [!info] 非弹性需求 (Inelastic Demand)
 > 当价格弹性 **小于 1** 时，需求是 **inelastic** 的。此时需求量变动的百分比**小于**价格变动的百分比。
@@ -157,7 +157,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 5.3 弹性需求 (Elastic Demand)
 
-![[slide_13.png]]
+![slide 13](Assets/slide_13.png)
 
 > [!info] 弹性需求 (Elastic Demand)
 > 当价格弹性 **大于 1** 时，需求是 **elastic** 的。此时需求量变动的百分比**大于**价格变动的百分比。
@@ -170,7 +170,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 6.1 为什么要关心弹性的分类？
 
-![[slide_16.png]]
+![slide 16](Assets/slide_16.png)
 
 > [!question] 核心问题
 > 为什么区分 unit-elastic、inelastic 和 elastic 需求如此重要？
@@ -181,15 +181,15 @@ chapter: "Chapter 6 — Elasticity"
 > 总收益定义为销售一种商品或服务的总价值：
 > Total Revenue = Price × Quantity Sold
 
-![[slide_17.png]]
+![slide 17](Assets/slide_17.png)
 
 上图绿色矩形区域代表了在价格为 $0.90、通行量为 1,100 时的总收益：$0.90 × 1,100 = $990。
 
 ### 6.2 价格效应与数量效应
 
-![[slide_18.png]]
+![slide 18](Assets/slide_18.png)
 
-![[slide_19.png]]
+![slide 19](Assets/slide_19.png)
 
 当卖家提高商品价格时，有两个相互抵消的效应在起作用（除非商品具有 perfectly elastic 或 perfectly inelastic 的需求）：
 
@@ -203,7 +203,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 6.3 弹性分类与总收益的关系
 
-![[slide_20.png]]
+![slide 20](Assets/slide_20.png)
 
 > [!warning] 关键结论（考试重点）
 > | 需求类型 | 弹性值 | 涨价对总收益的影响 | 主导效应 |
@@ -212,17 +212,17 @@ chapter: "Chapter 6 — Elasticity"
 > | **Inelastic（缺乏弹性）** | < 1 | 总收益 **增加** | 价格效应 > 数量效应 |
 > | **Unit-Elastic（单位弹性）** | = 1 | 总收益 **不变** | 两种效应恰好抵消 |
 
-![[slide_21.png]]
+![slide 21](Assets/slide_21.png)
 
 上图直观展示了两种情况的对比：
 - **Inelastic demand 情形**：价格从 $4 涨到 $5（上涨 25%），需求量仅从 100 降到 90（下降 10%），总收益从 $400 **增加到** $450。
 - **Elastic demand 情形**：价格同样从 $4 涨到 $5，需求量却从 100 剧降到 70（下降 30%），总收益从 $400 **减少到** $350。
 
-![[slide_22.png]]
+![slide 22](Assets/slide_22.png)
 
 ### 6.4 沿线性需求曲线的弹性变化
 
-![[slide_23.png]]
+![slide 23](Assets/slide_23.png)
 
 > [!info] 重要洞察
 > **需求的价格弹性沿需求曲线是变化的**——即使是在一条直线上也是如此。
@@ -252,7 +252,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ## 七、影响需求价格弹性的因素
 
-![[slide_24.png]]
+![slide 24](Assets/slide_24.png)
 
 > [!info] 决定需求价格弹性的四大因素
 
@@ -276,14 +276,14 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 8.1 需求的交叉价格弹性 (Cross-Price Elasticity of Demand)
 
-![[slide_26.png]]
+![slide 26](Assets/slide_26.png)
 
 > [!info] 交叉价格弹性 (Cross-Price Elasticity of Demand)
 > 交叉价格弹性衡量的是**一种商品价格的变动对另一种商品需求量的影响**。
 >
 > $[\text{Cross-Price Elasticity of Demand} = \frac{\%\ \text{Change in Quantity of Good A Demanded}}{\%\ \text{Change in Price of Good B}}]$
 
-![[slide_27.png]]
+![slide 27](Assets/slide_27.png)
 
 > [!warning] 交叉弹性的符号含义（考试重点）
 > - **替代品 (Substitutes)**：交叉价格弹性为 **正 (+)** —— B 商品涨价，A 商品的需求量上升。
@@ -293,7 +293,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 8.2 需求的收入弹性 (Income Elasticity of Demand)
 
-![[slide_28.png]]
+![slide 28](Assets/slide_28.png)
 
 > [!info] 收入弹性 (Income Elasticity of Demand)
 > 收入弹性衡量的是消费者收入变动对商品需求量的影响。
@@ -312,7 +312,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 9.1 定义
 
-![[slide_29.png]]
+![slide 29](Assets/slide_29.png)
 
 > [!info] 供给的价格弹性 (Price Elasticity of Supply)
 > 供给的价格弹性衡量的是商品供给量对该商品价格变化的反应程度。
@@ -321,17 +321,17 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 9.2 单位弹性供给示例
 
-![[slide_30.png]]
+![slide 30](Assets/slide_30.png)
 
 供给弹性决定了供给曲线是陡峭还是平坦。在单位弹性供给的例子中，价格上升 22%（使用中点法），供给量也恰好上升 22%，弹性等于 1。
 
 ### 9.3 两种极端情况
 
-![[slide_31.png]]
+![slide 31](Assets/slide_31.png)
 
-![[slide_32.png]]
+![slide 32](Assets/slide_32.png)
 
-![[slide_33.png]]
+![slide 33](Assets/slide_33.png)
 
 > [!info] 完全非弹性供给 (Perfectly Inelastic Supply)
 > - 价格弹性 = **0**
@@ -347,7 +347,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 9.4 影响供给弹性的因素
 
-![[slide_34.png]]
+![slide 34](Assets/slide_34.png)
 
 > [!info] 决定供给价格弹性的两大因素
 
@@ -358,7 +358,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ### 9.5 供给弹性沿供给曲线的变化
 
-![[slide_35.png]]
+![slide 35](Assets/slide_35.png)
 
 > [!info] 产能限制与弹性变化
 > 企业通常有最大产能限制。在**低产量水平**，供给弹性可能很高（企业有大量闲置产能可以快速启用）；但在**高产量水平**，当企业接近产能极限时，进一步增加产量变得非常困难，供给弹性会显著下降。
@@ -369,9 +369,9 @@ chapter: "Chapter 6 — Elasticity"
 
 ## 十、弹性全景图 (An Elasticity Menagerie)
 
-![[slide_36.png]]
+![slide 36](Assets/slide_36.png)
 
-![[slide_37.png]]
+![slide 37](Assets/slide_37.png)
 
 下表总结了本章涵盖的所有弹性概念：
 
@@ -386,15 +386,15 @@ chapter: "Chapter 6 — Elasticity"
 
 ## 十一、本章小结 (Chapter Summary)
 
-![[slide_38.png]]
+![slide 38](Assets/slide_38.png)
 
-![[slide_39.png]]
+![slide 39](Assets/slide_39.png)
 
-![[slide_40.png]]
+![slide 40](Assets/slide_40.png)
 
-![[slide_41.png]]
+![slide 41](Assets/slide_41.png)
 
-![[slide_42.png]]
+![slide 42](Assets/slide_42.png)
 
 1. **弹性 (Elasticity)** 是一个衡量反应程度的通用指标，用于回答"一个变量对另一个变量的变化有多敏感"这类问题。
 
@@ -416,7 +416,7 @@ chapter: "Chapter 6 — Elasticity"
 
 ## 十二、关键术语 (Key Terms)
 
-![[slide_43.png]]
+![slide 43](Assets/slide_43.png)
 
 | 英文术语 | 中文翻译 |
 |:---|:---|

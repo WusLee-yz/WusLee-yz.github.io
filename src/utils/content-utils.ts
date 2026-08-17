@@ -17,6 +17,53 @@ async function getRawSortedPosts() {
 	return sorted;
 }
 
+const naturalCollator = new Intl.Collator("zh-CN", {
+	numeric: true,
+	sensitivity: "base",
+});
+
+function sequenceSegmentKey(segment: string) {
+	const decoded = decodeURIComponent(segment).replace(/\.md$/iu, "");
+	const namedSequence = decoded.match(/^(?:c|chapter|kapitel)[\s_-]*(\d+)(.*)$/iu);
+	const numberedSequence = decoded.match(/^(\d+)(?:\.(\d+))?(.*)$/u);
+	const match = namedSequence ?? numberedSequence;
+	if (!match) return { sequence: false, numbers: [] as number[], remainder: decoded };
+
+	return {
+		sequence: true,
+		numbers: match
+			.slice(1, -1)
+			.filter((part): part is string => typeof part === "string")
+			.map(Number),
+		remainder: match.at(-1) ?? "",
+	};
+}
+
+function comparePathNaturally(slugA: string, slugB: string) {
+	const segmentsA = slugA.split("/");
+	const segmentsB = slugB.split("/");
+	const length = Math.max(segmentsA.length, segmentsB.length);
+
+	for (let i = 0; i < length; i++) {
+		if (segmentsA[i] === undefined) return -1;
+		if (segmentsB[i] === undefined) return 1;
+
+		const keyA = sequenceSegmentKey(segmentsA[i]);
+		const keyB = sequenceSegmentKey(segmentsB[i]);
+		if (keyA.sequence !== keyB.sequence) return keyA.sequence ? -1 : 1;
+
+		for (let j = 0; j < Math.max(keyA.numbers.length, keyB.numbers.length); j++) {
+			const numberA = keyA.numbers[j] ?? -1;
+			const numberB = keyB.numbers[j] ?? -1;
+			if (numberA !== numberB) return numberA - numberB;
+		}
+
+		const remainderComparison = naturalCollator.compare(keyA.remainder, keyB.remainder);
+		if (remainderComparison !== 0) return remainderComparison;
+	}
+	return 0;
+}
+
 export async function getSortedPosts() {
 	const sorted = await getRawSortedPosts();
 
@@ -37,6 +84,10 @@ export type PostForList = {
 };
 export async function getSortedPostsList(): Promise<PostForList[]> {
 	const sortedFullPosts = await getRawSortedPosts();
+	sortedFullPosts.sort((a, b) => {
+		const yearDifference = b.data.published.getFullYear() - a.data.published.getFullYear();
+		return yearDifference || comparePathNaturally(a.slug, b.slug);
+	});
 
 	// delete post.body
 	const sortedPostsList = sortedFullPosts.map((post) => ({

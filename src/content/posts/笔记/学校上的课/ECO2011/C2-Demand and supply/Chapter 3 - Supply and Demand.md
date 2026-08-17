@@ -26,7 +26,7 @@ textbook: "Microeconomics, Third Edition"
 > 4. 理解 Supply and Demand 如何决定 **Equilibrium Price（均衡价格）** 与 **Equilibrium Quantity（均衡数量）**
 > 5. 掌握 Shortage（短缺）或 Surplus（过剩）如何推动价格回归均衡
 
-![[slide_3.png]]
+![slide 3](Assets/slide_3.png)
 
 ---
 
@@ -49,8 +49,8 @@ textbook: "Microeconomics, Third Edition"
 | 市场均衡 | Market Equilibrium |
 | 市场均衡的变化 | Changes in Market Equilibrium |
 
-![[slide_1.png]]
-![[slide_2.png]]
+![slide 1](Assets/slide_1.png)
+![slide 2](Assets/slide_2.png)
 
 ---
 
@@ -68,7 +68,7 @@ textbook: "Microeconomics, Third Edition"
 >
 > 思考：当价格上涨时，你的 Quantity Demanded 会发生什么变化？
 
-![[slide_4.png]]
+![slide 4](Assets/slide_4.png)
 
 ### 2.2 需求曲线 (Demand Curve) 与需求定律 (Law of Demand)
 
@@ -92,13 +92,13 @@ textbook: "Microeconomics, Third Edition"
 | $0.75 | 17 |
 | $0.50 | — |
 
-![[slide_5.png]]
+![slide 5](Assets/slide_5.png)
 
 #### 🌍 全球案例：付更多钱，加更少油
 
 由于高税收，大多数欧洲国家的汽油和柴油价格是美国的两倍多。根据 Law of Demand，欧洲人应该比美国人消费更少的汽油——事实也确实如此：欧洲人的人均燃料消费量不到美国人的一半，主要是因为他们开更小、更省油的车。
 
-![[slide_6.png]]
+![slide 6](Assets/slide_6.png)
 
 ### 2.3 需求的增加 (An Increase in Demand)
 
@@ -119,8 +119,8 @@ textbook: "Microeconomics, Third Edition"
 | $0.75 | 11.5 | 13.8 |
 | $0.50 | 14.2 | 17.0 |
 
-![[slide_7.png]]
-![[slide_8.png]]
+![slide 7](Assets/slide_7.png)
+![slide 8](Assets/slide_8.png)
 
 ### 2.4 沿需求曲线的移动 vs. 需求曲线的移动 (Movement Along vs. Shift)
 
@@ -142,7 +142,7 @@ textbook: "Microeconomics, Third Edition"
 >
 > *请用图形辅助说明，并互相批改答案。*
 
-![[slide_9.png]]
+![slide 9](Assets/slide_9.png)
 
 ### 2.5 需求曲线的移动方向 (Shifts of the Demand Curve)
 
@@ -150,7 +150,7 @@ textbook: "Microeconomics, Third Edition"
 > - **Increase in Demand（需求增加）** = Demand Curve 向右移动 (Rightward Shift, D₁ → D₂)：在任何给定价格下，消费者需求量更大
 > - **Decrease in Demand（需求减少）** = Demand Curve 向左移动 (Leftward Shift, D₁ → D₃)：在任何给定价格下，消费者需求量更小
 
-![[slide_10.png]]
+![slide 10](Assets/slide_10.png)
 
 ### 2.6 导致需求曲线移动的五大因素
 
@@ -199,8 +199,8 @@ textbook: "Microeconomics, Third Edition"
 > 2. 继 David Beckham 和 Sting 之后，越来越多男性开始追随穿裙子的时尚。这种品味变化对裙子的需求会有什么影响？
 > 3. 科学家宣布 5 年内海洋中将不再有鱼类。这一声明对寿司 (Sushi) 的需求会有什么影响？
 
-![[slide_11.png]]
-![[slide_12.png]]
+![slide 11](Assets/slide_11.png)
+![slide 12](Assets/slide_12.png)
 
 ### 2.7 个人需求曲线与市场需求曲线 (Individual Demand Curve & Market Demand Curve)
 
@@ -212,7 +212,7 @@ textbook: "Microeconomics, Third Edition"
 - Dino 在 $30/条时购买 2 条
 - 市场总需求 = 3 + 2 = 5 条
 
-![[slide_13.png]]
+![slide 13](Assets/slide_13.png)
 
 ---
 
@@ -231,8 +231,8 @@ textbook: "Microeconomics, Third Edition"
 > [!warning] 拥堵收费的政治争议
 > Congestion Pricing 在政治上具有争议性，因为它直接向驾驶者收费——但它确实有效减少了交通量。
 
-![[slide_14.png]]
-![[slide_15.png]]
+![slide 14](Assets/slide_14.png)
+![slide 15](Assets/slide_15.png)
 
 ---
 
@@ -255,7 +255,7 @@ textbook: "Microeconomics, Third Edition"
 | $0.75 | 9.1 |
 | $0.50 | 8.0 |
 
-![[slide_16.png]]
+![slide 16](Assets/slide_16.png)
 
 ### 4.2 供给曲线 (Supply Curve)
 
@@ -264,7 +264,7 @@ textbook: "Microeconomics, Third Edition"
 
 与 Demand Curve 不同，Supply Curve 通常是 **向上倾斜 (Upward Sloping)** 的：**价格上升 → 供给量上升**。这是因为当价格上升时，生产者每卖出一单位商品能获得更多收益，因此愿意增加供给量。这反映了价格与供给量之间的**正向关系 (Positive Relationship)**。
 
-![[slide_17.png]]
+![slide 17](Assets/slide_17.png)
 
 ### 4.3 供给的增加 (An Increase in Supply)
 
@@ -273,7 +273,7 @@ textbook: "Microeconomics, Third Edition"
 
 例如，棉花种植业采用更好的技术 → 在任何给定价格下都有更多产量和更多生产者进入 → Supply Curve 向右移动。
 
-![[slide_18.png]]
+![slide 18](Assets/slide_18.png)
 
 ### 4.4 沿供给曲线的移动 vs. 供给曲线的移动 (Movement Along vs. Shift)
 
@@ -281,7 +281,7 @@ textbook: "Microeconomics, Third Edition"
 > - **Movement Along the Supply Curve**：由商品**自身价格变化**引起 → 沿同一条 Supply Curve 移动（A 到 B）
 > - **Shift of the Supply Curve**：由**外部因素**引起 → 任何给定价格下供给量发生变化（A 到 C）
 
-![[slide_19.png]]
+![slide 19](Assets/slide_19.png)
 
 ### 4.5 供给曲线的移动方向 (Shifts of the Supply Curve)
 
@@ -291,7 +291,7 @@ textbook: "Microeconomics, Third Edition"
 
 经济学家所说的 "Increase in Supply"，指的是右移——在任何给定价格下生产者供给更多。同样，"Decrease in Supply" 指的是左移。
 
-![[slide_20.png]]
+![slide 20](Assets/slide_20.png)
 
 ### 4.6 导致供给曲线移动的五大因素
 
@@ -309,7 +309,7 @@ textbook: "Microeconomics, Third Edition"
 > [!question] 课堂练习 (Class Exercise)
 > 互联网技术使大学能够提供越来越多在线经济学课程和资源。经济知识的供给会发生什么变化？
 
-![[slide_21.png]]
+![slide 21](Assets/slide_21.png)
 
 ### 4.7 经济学在行动：农场兽医的减少 (Only Creatures Small and Pampered)
 
@@ -320,8 +320,8 @@ textbook: "Microeconomics, Third Edition"
 - 兽医被吸引离开农场动物护理，转向利润更高的宠物护理
 - 结果：**Farm Veterinary Services 的 Supply Curve 向左移动**——在任何给定价格下，提供农场服务的兽医减少了
 
-![[slide_22.png]]
-![[slide_23.png]]
+![slide 22](Assets/slide_22.png)
+![slide 23](Assets/slide_23.png)
 
 ### 4.8 个人供给曲线与市场供给曲线 (Individual Supply Curve & Market Supply Curve)
 
@@ -334,7 +334,7 @@ textbook: "Microeconomics, Third Edition"
 
 显然，生产者数量越多，在任何给定价格下的市场供给量越大 → 生产者数量的增加导致 Supply 增加、Supply Curve 右移。
 
-![[slide_24.png]]
+![slide 24](Assets/slide_24.png)
 
 ---
 
@@ -358,9 +358,9 @@ textbook: "Microeconomics, Third Edition"
 
 假设一个卖家向潜在买家报出的价格明显高于买家所知其他人支付的价格——买家显然会离开找别人，除非卖家愿意降价。反之，卖家也不愿意以明显低于市场价的水平出售。因此，在任何成熟、持续运营的市场中，所有卖家收到和所有买家支付的价格大致相同——这就是我们所说的 **Market Price（市场价格）**。
 
-![[slide_25.png]]
-![[slide_26.png]]
-![[slide_27.png]]
+![slide 25](Assets/slide_25.png)
+![slide 26](Assets/slide_26.png)
+![slide 27](Assets/slide_27.png)
 
 ### 5.2 过剩 (Surplus)
 
@@ -374,7 +374,7 @@ textbook: "Microeconomics, Third Edition"
 
 Surplus 将推动价格**下降**，直到达到均衡价格。
 
-![[slide_28.png]]
+![slide 28](Assets/slide_28.png)
 
 ### 5.3 短缺 (Shortage)
 
@@ -391,7 +391,7 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 > [!info] 现实案例：iPhone 3G 的短缺
 > 2008 年夏天，Apple 以之前型号一半的价格 ($199) 推出 iPhone 3G 时，在全美引起了（暂时的）短缺。长队和等候名单就是 Shortage 的明显标志。
 
-![[slide_29.png]]
+![slide 29](Assets/slide_29.png)
 
 ### 5.4 需求曲线移动对均衡的影响
 
@@ -409,7 +409,7 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 > [!question] 课堂讨论
 > 咖啡和茶是 Substitutes：如果茶的价格上涨，咖啡的需求会增加。但茶的价格如何影响咖啡市场呢？
 
-![[slide_30.png]]
+![slide 30](Assets/slide_30.png)
 
 ### 5.5 供给曲线移动对均衡的影响
 
@@ -432,8 +432,8 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 > - 如果 Quantity 和 Price **同方向**变化（如两者都上升）→ 很可能是 **Demand Curve 移动了**
 > - 如果 Quantity 和 Price **反方向**变化（如价格上升但数量下降）→ 很可能是 **Supply Curve 移动了**
 
-![[slide_31.png]]
-![[slide_32.png]]
+![slide 31](Assets/slide_31.png)
+![slide 32](Assets/slide_32.png)
 
 ---
 
@@ -450,7 +450,7 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 - 美国玉米价格因 **乙醇 (Ethanol)** 市场需求的激增而快速上涨
 - 这导致玉米（玉米饼的关键 Input）成本上升 → Tortillas 的 Supply 下降 → Equilibrium Price 上升
 
-![[slide_33.png]]
+![slide 33](Assets/slide_33.png)
 
 ### 6.2 毒品战争中的供需分析 (Supply, Demand, and Controlled Substances)
 
@@ -463,7 +463,7 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 >
 > 原因在于：成瘾消费者对毒品的需求**缺乏弹性 (Inelastic Demand)**——即使价格大幅上涨，他们仍然继续购买。
 
-![[slide_34.png]]
+![slide 34](Assets/slide_34.png)
 
 ### 6.3 超模的供需练习 (Your Turn on the Runway: Supermodels)
 
@@ -477,7 +477,7 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 >
 > 也就是说，普通（非名人）时尚模特的薪酬下降了。
 
-![[slide_38.png]]
+![slide 38](Assets/slide_38.png)
 
 ### 6.4 2008 年大米抢购潮 (The Rice Run of 2008)
 
@@ -495,9 +495,9 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 
 在亚洲许多地区，政府是主要的稻米买家，农民以政府设定价格出售，再以补贴价卖给穷人。当全球价格上升时，农民（如今也能通过互联网查看全球大米报价）对政府定价不满，转而囤积大米，相信最终能获得更高价格。这种信念是**自我实现 (Self-fulfilling)** 的——囤积行为使 Supply Curve 进一步左移，推动价格继续上涨。
 
-![[slide_39.png]]
-![[slide_40.png]]
-![[slide_41.png]]
+![slide 39](Assets/slide_39.png)
+![slide 40](Assets/slide_40.png)
+![slide 41](Assets/slide_41.png)
 
 ---
 
@@ -512,14 +512,14 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 - Demand 大幅右移 + Supply 小幅左移
 - **Equilibrium Price ↑**, **Equilibrium Quantity ↑**
 
-![[slide_35.png]]
+![slide 35](Assets/slide_35.png)
 
 #### 情况 (b)：供给减少占主导 (Supply Decrease Dominates)
 
 - Demand 小幅右移 + Supply 大幅左移
 - **Equilibrium Price ↑**, **Equilibrium Quantity ↓**
 
-![[slide_36.png]]
+![slide 36](Assets/slide_36.png)
 
 ### 7.2 供需同时移动的预测总结
 
@@ -539,7 +539,7 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 >
 > - **一般来说，移动幅度更大 (disproportionately greater) 的曲线对 Equilibrium Price 和 Quantity 的影响更大。**
 
-![[slide_37.png]]
+![slide 37](Assets/slide_37.png)
 
 ---
 
@@ -592,7 +592,7 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 | Surplus               | 过剩     |
 | Shortage              | 短缺     |
 
-![[slide_51.png]]
+![slide 51](Assets/slide_51.png)
 
 ---
 
@@ -605,10 +605,10 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 > - **Movement Along** 由价格变化引起；**Shift** 由外部因素（替代品/互补品价格、收入、品味、预期、消费者数量）引起
 > - **Market Demand Curve** = 所有 Individual Demand Curves 的水平加总
 
-![[slide_42.png]]
-![[slide_43.png]]
-![[slide_44.png]]
-![[slide_45.png]]
+![slide 42](Assets/slide_42.png)
+![slide 43](Assets/slide_43.png)
+![slide 44](Assets/slide_44.png)
+![slide 45](Assets/slide_45.png)
 
 ### 9.2 供给 (Supply)
 
@@ -617,8 +617,8 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 > - 五大移动因素：Input Prices、相关商品价格、Technology、Expectations、Number of Producers
 > - **Market Supply Curve** = 所有 Individual Supply Curves 的水平加总
 
-![[slide_46.png]]
-![[slide_47.png]]
+![slide 46](Assets/slide_46.png)
+![slide 47](Assets/slide_47.png)
 
 ### 9.3 均衡 (Equilibrium)
 
@@ -629,9 +629,9 @@ Shortage 将推动价格**上升**，直到达到均衡价格。
 > - Demand ↑ → Price ↑, Quantity ↑；Supply ↑ → Price ↓, Quantity ↑
 > - 供需同时移动：反方向 → Price 确定/Quantity 不确定；同方向 → Quantity 确定/Price 不确定
 
-![[slide_48.png]]
-![[slide_49.png]]
-![[slide_50.png]]
+![slide 48](Assets/slide_48.png)
+![slide 49](Assets/slide_49.png)
+![slide 50](Assets/slide_50.png)
 
 ---
 

@@ -41,7 +41,7 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 
 **总产量曲线 (Total Product Curve)** 展示了在给定固定投入数量的情况下，产出数量如何随可变投入数量的变化而变化。
 
-![[slide_3.png]]
+![slide 3](Assets/slide_3.png)
 
 ### 1.2 George 与 Martha 农场的生产函数
 
@@ -61,7 +61,7 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 
 从表中可以清楚看到：随着工人数量的增加，每增加一名工人所带来的额外产出**递减**——这便是**边际报酬递减 (Diminishing Returns)** 的核心表现。
 
-![[slide_4.png]]
+![slide 4](Assets/slide_4.png)
 
 ### 1.3 边际产量与边际报酬递减
 
@@ -73,11 +73,11 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 
 在 George 与 Martha 的农场中，第一名工人带来了 19 蒲式耳的增产，第二名工人带来 17 蒲式耳，第三名 15 蒲式耳……劳动边际产量持续下降。**边际产量递减是经济学中最基本也是最重要的规律之一**，它是后续推导成本曲线形状的关键。
 
-![[slide_5.png]]
+![slide 5](Assets/slide_5.png)
 
 **劳动边际产量曲线 (Marginal Product of Labor Curve)** 呈现明显的向下倾斜趋势：
 
-![[slide_6.png]]
+![slide 6](Assets/slide_6.png)
 
 > 从演讲者备注中可以看到，该图描绘的是每位新增工人对应的边际产量。纵轴衡量产出变化量，横轴衡量工人数量。曲线向下倾斜正是**边际报酬递减**的直接体现。
 
@@ -85,7 +85,7 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 
 当固定投入（如土地面积）发生改变时，总产量曲线和边际产量曲线都会发生移动。
 
-![[slide_7.png]]
+![slide 7](Assets/slide_7.png)
 
 上图包含两组曲线：
 - **Panel (a)**：$TP_{10}$ 和 $TP_{20}$ 分别代表 10 英亩和 20 英亩土地时的总产量曲线。当土地面积翻倍时，**每一位工人的产量都更高**，因此总产量曲线整体上移。
@@ -106,7 +106,7 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 > [!info] 可变成本 (Variable Cost)
 > 依赖于产出数量变化的成本。它是可变投入的成本。例如：发电过程中使用的**柴油燃料**就是可变成本。
 
-![[slide_8.png]]
+![slide 8](Assets/slide_8.png)
 
 ### 2.2 总成本曲线 (Total Cost Curve)
 
@@ -116,7 +116,7 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 
 **总成本曲线 (Total Cost Curve)** 显示了总成本如何随产出数量变化。它的形状特征为：**随着产出的增加，曲线变得越来越陡峭**——这正是边际报酬递减的直接后果。
 
-![[slide_9.png]]
+![slide 9](Assets/slide_9.png)
 
 ### 2.3 George 与 Martha 农场的总成本
 
@@ -136,7 +136,7 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 
 > 从演讲者备注中可以确认：总成本曲线向上倾斜——因为产出增加需要雇佣更多工人，总成本随之增加。曲线变得越来越陡峭，正是因为**劳动的边际报酬递减**：每增加一单位产出，需要越来越多的工人。
 
-![[slide_10.png]]
+![slide 10](Assets/slide_10.png)
 
 ---
 
@@ -152,17 +152,17 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 
 类比于边际产量等于"上升量除以水平距离"（即斜率），边际成本也是总成本曲线斜率的度量。
 
-![[slide_11.png]]
+![slide 11](Assets/slide_11.png)
 
 ### 3.2 Selena's Gourmet Salsas 案例
 
 为更好地展示成本结构，教材引入了 Selena's Gourmet Salsas（一家辣酱公司）的生产数据：
 
-![[slide_12.png]]
+![slide 12](Assets/slide_12.png)
 
 以下是该公司的总成本与边际成本曲线：
 
-![[slide_13.png]]
+![slide 13](Assets/slide_13.png)
 
 > 从演讲者备注可以明确：Panel (a) 的总成本曲线向上倾斜且越来越陡峭，Panel (b) 的边际成本曲线也向上倾斜——这都反映了**可变投入的边际报酬递减**。
 
@@ -175,7 +175,7 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 >
 > 这就是边际成本曲线向上倾斜的根本原因。
 
-![[slide_14.png]]
+![slide 14](Assets/slide_14.png)
 
 ### 3.4 平均成本 (Average Cost)
 
@@ -193,7 +193,7 @@ chapter: "Chapter 11: Behind the Supply Curve — Inputs and Costs"
 
 其中，**典型的 ATC 曲线呈 U 形 (U-shaped)**：在较低产出水平时下降，在较高产出水平时上升。
 
-![[slide_15.png]]
+![slide 15](Assets/slide_15.png)
 
 ### 3.5 U 形成本曲线的形成机制：两种效应
 
@@ -210,15 +210,15 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 > [!warning] 考点提示
 > U 形 ATC 曲线的形状并非偶然。在低产出水平，"摊薄效应"占主导 → ATC 下降；在高产出水平，"边际报酬递减效应"占主导 → ATC 上升。这两种效应的**相对力量对比**决定了 ATC 曲线的走向。
 
-![[slide_16.png]]
+![slide 16](Assets/slide_16.png)
 
 ### 3.6 Selena's Gourmet Salsas 的平均成本
 
-![[slide_18.png]]
+![slide 18](Assets/slide_18.png)
 
 以下是 Selena's Gourmet Salsas 的完整平均成本曲线：
 
-![[slide_19.png]]
+![slide 19](Assets/slide_19.png)
 
 > 演讲者备注详细解释：**最低平均总成本**出现在点 M，对应每天 3 箱辣酱的产出。在低产出水平，"摊薄效应"（AFC 下降）超过"边际报酬递减效应"（AVC 上升），ATC 下降。在高产出水平，情况正好相反，ATC 上升。
 
@@ -230,7 +230,7 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 
 现在将所有曲线画在同一张图中：
 
-![[slide_20.png]]
+![slide 20](Assets/slide_20.png)
 
 四条核心成本曲线的关系：
 - **MC (Marginal Cost)**：向上倾斜，反映边际报酬递减。
@@ -238,7 +238,7 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 - **AFC (Average Fixed Cost)**：持续向下倾斜，反映摊薄效应。
 - **ATC (Average Total Cost)**：U 形，是 AFC 与 AVC 的垂直加总。
 
-![[slide_21.png]]
+![slide 21](Assets/slide_21.png)
 
 > 演讲者备注明确指出：ATC 曲线呈 U 形，MC 曲线在 U 形底部（点 M）与 ATC 相交，该点对应的是**最低平均总成本 (minimum average total cost)**。
 
@@ -253,11 +253,11 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 > [!warning] 考点必考
 > 这个关系与 GPA 的逻辑完全一致：如果你的边际成绩（本学期的 GPA）低于你的累计平均成绩，平均成绩就会被拉低；如果边际成绩高于平均，平均就会被拉高。**MC 曲线必定从下方穿过 ATC 曲线的最低点**——这不是偶然，而是逻辑必然。
 
-![[slide_22.png]]
+![slide 22](Assets/slide_22.png)
 
 ### 4.3 直观理解
 
-![[slide_23.png]]
+![slide 23](Assets/slide_23.png)
 
 > 演讲者备注的精彩解释：为了理解为什么 MC 曲线必须穿过 ATC 曲线的最低点（点 M），我们观察 MC 与 ATC 不同时的两种情况。如果 MC < ATC，增加产出必定降低 ATC（如 A₁ → A₂ 的移动）。如果 MC > ATC，增加产出必定提高 ATC（如 B₁ → B₂ 的移动）。**只有当 MC = ATC 时，ATC 既不上升也不下降——这正是 U 形底部的位置。**
 
@@ -269,7 +269,7 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 
 在实践中，边际成本曲线往往呈现 **"✔ Swoosh" 形状**：在极低产出水平时先下降，然后在高产出水平时上升。
 
-![[slide_24.png]]
+![slide 24](Assets/slide_24.png)
 
 > [!info] 为什么 MC 最初会下降？
 > 当一个企业只雇佣极少数工人时，**劳动专业化 (Specialization of Labor)** 的好处无法充分实现。随着工人数量增加：
@@ -280,7 +280,7 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 
 ### 5.2 更现实成本曲线的形态
 
-![[slide_25.png]]
+![slide 25](Assets/slide_25.png)
 
 > 演讲者备注强调："Swoosh"形状的 MC 曲线和相应的 U 形 AVC 曲线才是更符合现实的情况。关键在于认识到**专业化的好处可以在一开始产生报酬递增**，直到工人数量足够、专业化红利耗尽，报酬递减才开始主导。
 
@@ -296,7 +296,7 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 >
 > 企业会在长期中根据**期望的产出水平**来选择最优的固定成本。
 
-![[slide_26.png]]
+![slide 26](Assets/slide_26.png)
 
 ### 6.2 固定成本的选择：权衡 (Trade-off)
 
@@ -308,7 +308,7 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 >
 > 哪种选择更优，取决于企业期望的**产出水平**。
 
-![[slide_27.png]]
+![slide 27](Assets/slide_27.png)
 
 > 演讲者备注的详细说明：$ATC_1$ 对应低固定成本（$108），$ATC_2$ 对应高固定成本（$216）但更低的可变成本。在低产出水平（4 箱或以下），$ATC_1$ 低于 $ATC_2$——固定成本低更有优势。但在高产出水平（超过 4 箱），$ATC_2$ 低于 $ATC_1$——高固定成本换来更低的可变成本，总成本反而更低。
 
@@ -317,7 +317,7 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 > [!info] 长期平均总成本曲线 (Long-Run Average Total Cost Curve, LRATC)
 > 展示了在**固定成本已被选择为对每个产出水平最小化平均总成本**的前提下，产出与平均总成本之间的关系。
 
-![[slide_28.png]]
+![slide 28](Assets/slide_28.png)
 
 > 演讲者备注解释了图中的三个重要点：
 > - 如果 Selena 选择对应于 6 箱产出的固定成本水平并实际生产 6 箱，她位于 $LRATC$ 和 $ATC_6$ 上的点 C。
@@ -328,7 +328,7 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 
 ## 7. 规模报酬 (Returns to Scale)
 
-![[slide_29.png]]
+![slide 29](Assets/slide_29.png)
 
 > [!info] 规模经济 / 规模报酬递增 (Increasing Returns to Scale / Economies of Scale)
 > 当产出增加时，**长期平均总成本下降**。
@@ -351,11 +351,11 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 
 ## 8. 本章总结 (Summary)
 
-![[slide_30.png]]
+![slide 30](Assets/slide_30.png)
 
 ### 8.1 生产函数与成本基础
 
-![[slide_31.png]]
+![slide 31](Assets/slide_31.png)
 
 - **生产函数 (Production Function)** 描述了投入与产出之间的关系。
 - 短期中，固定投入不可变，可变投入可变；长期中，所有投入皆可变。
@@ -363,14 +363,14 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 
 ### 8.2 边际报酬递减与成本结构
 
-![[slide_32.png]]
+![slide 32](Assets/slide_32.png)
 
 - 当边际产量随投入增加而下降时，存在 **边际报酬递减 (Diminishing Returns)**。
 - **总成本 (Total Cost)** = 固定成本 (Fixed Cost) + 可变成本 (Variable Cost)。
 
 ### 8.3 平均成本与边际成本
 
-![[slide_33.png]]
+![slide 33](Assets/slide_33.png)
 
 - **平均总成本 (ATC)** = TC / Q；**边际成本 (MC)** = 额外一单位产出的成本。
 - U 形 ATC 曲线由两部分构成：
@@ -379,14 +379,14 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 
 ### 8.4 最低成本产出
 
-![[slide_34.png]]
+![slide 34](Assets/slide_34.png)
 
 - U 形 ATC 曲线的最低点即为 **最低成本产出 (Minimum-Cost Output)**。
 - 在该点，**MC = ATC**，且 MC 曲线从下方穿过 ATC 曲线。
 
 ### 8.5 长期成本与规模报酬
 
-![[slide_35.png]]
+![slide 35](Assets/slide_35.png)
 
 - 长期中，企业可以改变固定投入和固定成本水平。
 - **长期平均总成本曲线 (LRATC)** 展示最优固定成本选择下的成本关系。
@@ -399,7 +399,7 @@ ATC 曲线之所以呈 U 形，是因为产出增加对平均总成本有两种�
 
 ## 9. 关键术语 (Key Terms)
 
-![[slide_36.png]]
+![slide 36](Assets/slide_36.png)
 
 | 英文术语 | 中文翻译 |
 |:--------|:--------|

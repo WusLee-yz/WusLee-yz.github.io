@@ -30,7 +30,7 @@ authors: "Paul Krugman & Robin Wells — Economics, 3rd Edition"
 - **实证经济学 (Positive Economics)** 与 **规范经济学 (Normative Economics)** 之间的区别
 - 经济学家何时意见一致，以及他们为何有时会产生分歧
 
-![[slide_1.png]]
+![slide 1](Assets/slide_1.png)
 
 ---
 
@@ -52,9 +52,9 @@ authors: "Paul Krugman & Robin Wells — Economics, 3rd Edition"
 > [!tip] **类比 (Analogy)**
 > 正如**地图**是对世界的一种简化表示，帮助我们理解地理一样，**经济模型**也是一种简化表示，帮助我们理解现实世界的经济问题。
 
-![[slide_3.png]]
+![slide 3](Assets/slide_3.png)
 
-![[slide_4.png]]
+![slide 4](Assets/slide_4.png)
 
 ---
 
@@ -72,7 +72,7 @@ PPF 模型有助于回答以下关键问题：
 - 增加某种商品的生产会给我们带来**什么代价**？
 - **是否值得从其他地方进口**该商品？
 
-![[slide_5.png]]
+![slide 5](Assets/slide_5.png)
 
 ### 理解 PPF 图形 (Understanding the PPF Graph)
 
@@ -84,7 +84,7 @@ PPF 模型有助于回答以下关键问题：
 > - **点 A 和点 B** → 可行且**在生产上是有效率的 (efficient in production)**
 > - **点 D** → 在给定的资源和技术条件下**不可行**
 
-![[slide_6.png]]
+![slide 6](Assets/slide_6.png)
 
 ---
 
@@ -110,7 +110,7 @@ PPF 模型有助于回答以下关键问题：
 - **每架 Dreamliner** 的机会成本是 **1⅓ 架 small jets**
 - **每架 Small Jet** 的机会成本是 **¾ 架 Dreamliner**
 
-![[slide_8.png]]
+![slide 8](Assets/slide_8.png)
 
 ### 递增的机会成本 (Increasing Opportunity Cost)
 
@@ -125,7 +125,7 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 >
 > 出现这种情况的原因是，最适合生产 Dreamliners 的资源被逐步转移去制造 small jets——每多生产一架 small jet，所放弃的 Dreamliners 数量就越多。
 
-![[slide_9.png]]
+![slide 9](Assets/slide_9.png)
 
 ### 经济增长与 PPF (Economic Growth and the PPF)
 
@@ -139,7 +139,7 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 1. **生产要素 (factors of production) 的增加**——即土地 (land)、劳动 (labor)、资本 (capital) 和人力资本 (human capital) 等资源
 2. **技术的进步 (improved technology)**
 
-![[slide_10.png]]
+![slide 10](Assets/slide_10.png)
 
 ---
 
@@ -152,12 +152,12 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 > [!note] **美国的 PPF（图 2.4，左图）**
 > 对美国而言，每架 small jet 的机会成本始终是 **¾ 架 large jet**。
 
-![[slide_11.png]]
+![slide 11](Assets/slide_11.png)
 
 > [!note] **巴西的 PPF（图 2.4，右图）**
 > 对巴西而言，每架 small jet 的机会成本始终是 **⅓ 架 large jet**。
 
-![[slide_12.png]]
+![slide 12](Assets/slide_12.png)
 
 ### 比较机会成本 (Comparing Opportunity Costs)
 
@@ -175,7 +175,7 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 - **巴西**应当为两个国家制造 small jets → 它的机会成本仅为 ⅓ 架 large jet（而美国为 ¾ 架）
 - **美国**应当为两个国家制造 large jets → 它的机会成本仅为 ⁴⁄₃ 架 small jets（而巴西为 3 架）
 
-![[slide_14.png]]
+![slide 14](Assets/slide_14.png)
 
 ### 可视化贸易收益 (Visualizing Gains from Trade)
 
@@ -185,7 +185,7 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 > - 美国专门生产 large jets（其比较优势所在）
 > - **结果：** 每个国家都可以比不进行贸易时消费更多的两种商品。
 
-![[slide_15.png]]
+![slide 15](Assets/slide_15.png)
 
 ### 量化贸易收益 (Quantifying the Gains)
 
@@ -195,7 +195,7 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 
 美国在生产 large jets 方面具有**比较优势 (comparative advantage)**，在生产 small jets 方面具有**比较劣势 (comparative disadvantage)**。
 
-![[slide_16.png]]
+![slide 16](Assets/slide_16.png)
 
 ### 比较优势 vs. 绝对优势 (Comparative vs. Absolute Advantage)
 
@@ -210,7 +210,7 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 
 **关键洞察：** 仅仅因为美国在*两种*商品上都能生产得更多（即在两种商品上都具有绝对优势），并不意味着我们不进行贸易会更好。要关注**机会成本**：既然巴西生产 small jets 的成本更低，美国*将会从*从巴西进口 small jets 中获益。
 
-![[slide_17.png]]
+![slide 17](Assets/slide_17.png)
 
 ---
 
@@ -233,7 +233,7 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 > 3. **澳大利亚**在两种商品上都具有*绝对优势*（每种商品所需时间都更少），但在种植西红柿方面也表现出*更高的机会成本*（20 vs. 12.5 个苹果）
 > 4. 因此，**巴西**在西红柿方面具有**比较优势**（机会成本更低）
 
-![[slide_18.png]]
+![slide 18](Assets/slide_18.png)
 
 ---
 
@@ -270,11 +270,11 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 > [!important] **为什么 Factor Markets 很重要**
 > 要素市场决定了经济体的**收入如何分配 (income is distributed)**——即生产成果如何在各种生产要素的所有者之间进行划分。
 
-![[slide_20.png]]
+![slide 20](Assets/slide_20.png)
 
-![[slide_21.png]]
+![slide 21](Assets/slide_21.png)
 
-![[slide_22.png]]
+![slide 22](Assets/slide_22.png)
 
 ---
 
@@ -304,9 +304,9 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 | 吸烟者将增加的医疗成本转嫁给了整个社会 | **实证 (Positive)** |
 | 单身母亲陷入贫困的可能性是已婚母亲的两倍以上 | **实证 (Positive)** |
 
-![[slide_23.png]]
+![slide 23](Assets/slide_23.png)
 
-![[slide_24.png]]
+![slide 24](Assets/slide_24.png)
 
 ---
 
@@ -324,7 +324,7 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 - 经济学常常**与政治纠缠在一起**
 - 强大的利益集团会寻找并推广那些给出支持性意见的经济学家
 
-![[slide_25.png]]
+![slide 25](Assets/slide_25.png)
 
 ---
 
@@ -364,7 +364,7 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 1. 他们可能就**在模型中采用哪些简化方式**产生分歧
 2. 他们可能——和所有人一样——就**价值观**产生分歧
 
-![[slide_26.png]]
+![slide 26](Assets/slide_26.png)
 
 ---
 
@@ -394,4 +394,4 @@ PPF 的**向外凸出的形状 (bowed-out shape)** 反映了这种递增的机�
 | **Efficient** | 在给定可用资源的情况下生产出最大可能的产出 |
 | **Equity** | 经济成果分配中的公平性 |
 
-![[slide_29.png]]
+![slide 29](Assets/slide_29.png)

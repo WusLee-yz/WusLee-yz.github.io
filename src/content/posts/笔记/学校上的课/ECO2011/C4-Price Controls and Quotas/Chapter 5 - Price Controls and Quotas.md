@@ -18,7 +18,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 # Chapter 5: Price Controls and Quotas — Meddling with Markets
 
-![[slide_1.png]]
+![slide 1](Assets/slide_1.png)
 
 ## 1. 为什么政府要干预价格？(Why Governments Control Prices)
 
@@ -35,7 +35,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 > 3. 为什么对市场干预的**可预测副作用 (predictable side effects)** 让经济学家对干预措施持怀疑态度
 > 4. 谁从市场干预中受益，谁受损，以及为什么尽管存在已知问题，这些干预仍被使用
 
-![[slide_3.png]]
+![slide 3](Assets/slide_3.png)
 
 ---
 
@@ -51,13 +51,13 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 - 世界各地城市的**租金管制 (Rent Control)**
 - 委内瑞拉对基本食品的价格管制
 
-![[slide_4.png]]
+![slide 4](Assets/slide_4.png)
 
 ### 2.2 公寓市场：无政府干预时的均衡
 
 首先来看在没有政府干预的情况下，公寓市场如何运作：
 
-![[slide_5.png]]
+![slide 5](Assets/slide_5.png)
 
 在没有政府干预时，公寓市场在 **点 E** 处达到均衡：市场租金为 **$1,000/月**，有 **200 万套公寓** 被租出。
 
@@ -77,7 +77,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 2.3 价格上限的效果 (The Effects of a Price Ceiling)
 
-![[slide_6.png]]
+![slide 6](Assets/slide_6.png)
 
 当政府将租金上限定在 **$800/月**（低于均衡价格 $1,000）时：
 
@@ -94,17 +94,17 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 > | **Binding (有约束力)** | 低于均衡价格 | 造成短缺 (Shortage)；卖方必须配给稀缺商品；导致低效的配给机制 |
 > | **Not Binding (无约束力)** | 高于均衡价格 | 对价格或交易量没有影响 |
 
-![[slide_7.png]]
+![slide 7](Assets/slide_7.png)
 
 ### 2.4 价格上限导致低效的低交易量 (Inefficiently Low Quantity)
 
-![[slide_8.png]]
+![slide 8](Assets/slide_8.png)
 
 价格上限将交易量压低至市场均衡量之下，造成 **无谓损失 (Deadweight Loss)**。图中阴影三角形面积代表着由于交易量过低而损失的总剩余 (Total Surplus)。
 
 ### 2.5 价格上限如何导致低效率 (How Price Ceilings Cause Inefficiency)
 
-![[slide_9.png]]
+![slide 9](Assets/slide_9.png)
 
 > [!warning] 价格上限导致的四类低效率
 > 1. **Inefficient Allocation to Consumers (对消费者的无效分配)**: 非常想要且愿意付高价的人得不到商品，而那些不太在意、只愿付低价的人反而得到了。
@@ -114,7 +114,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 2.6 案例分析：1970 年代美国的汽油价格管制
 
-![[slide_10.png]]
+![slide 10](Assets/slide_10.png)
 
 > [!question] Economics in Action: 汽油价格管制的经济代价
 >
@@ -132,11 +132,11 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 >
 > 结论：消费者浪费的资源（排队时间）可能抵消了低价带来的任何好处，甚至最终总成本比没有管制时更高。
 
-![[slide_11.png]]
+![slide 11](Assets/slide_11.png)
 
 ### 2.7 为什么价格上限仍然存在？——纽约租金管制
 
-![[slide_12.png]]
+![slide 12](Assets/slide_12.png)
 
 > [!question] 既然价格上限伤害大多数人，为什么它们仍然存在？
 > 1. 价格上限虽然伤害大多数居民，但**使少数租户获得比无管制市场便宜得多的住房**。这些受益者通常比受害者更有组织、更有政治影响力。
@@ -145,7 +145,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 2.8 租金管制的赢家与输家 (Winners and Losers from Rent Control)
 
-![[slide_13.png]]
+![slide 13](Assets/slide_13.png)
 
 > [!info] 福利分析 (Welfare Analysis)
 > - **Panel (a) — 租金管制前**: 展示了自由市场均衡下的消费者剩余 (Consumer Surplus) 和生产者剩余 (Producer Surplus)。
@@ -153,14 +153,14 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 2.9 全球视角：孟买的租金管制
 
-![[slide_14.png]]
+![slide 14](Assets/slide_14.png)
 
 > [!question] For Inquiring Minds: Rent Control, Mumbai Style
 > 2006 年 5 月，孟买一栋租金管制公寓楼因年久失修而倒塌，其中四层坍塌导致三人死亡。尽管市政府要求撤离，**58 名租户拒绝离开**。
 >
 > 孟买的租金管制始于 1947 年，旨在应对因印巴冲突难民涌入造成的严重住房短缺。该政策被延长了 **20 次**，如今适用于市中心约 **60%** 的建筑。
 
-![[slide_15.png]]
+![slide 15](Assets/slide_15.png)
 
 > [!warning] 租金管制的长期后果（孟买案例）
 > - 租户将公寓传给**继承人**，或将居住权**出售**给其他租户。
@@ -169,7 +169,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 2.10 短期 vs. 长期的租金管制
 
-![[slide_16.png]]
+![slide 16](Assets/slide_16.png)
 
 > [!info] 短期与长期的弹性差异
 > | 时间维度 | 供给特征 | 需求特征 | 租金管制的效果 |
@@ -181,14 +181,14 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 2.11 委内瑞拉：饥饿与价格管制
 
-![[slide_17.png]]
+![slide 17](Assets/slide_17.png)
 
 > [!question] Economics in Action: Hunger and Price Controls in Venezuela
 > 在委内瑞拉加拉加斯，超市购物是一种奇特的体验：货架上摆满了苏格兰威士忌和进口奶酪，但**黑豆和牛肉等基本主食却因价格管制而常常缺货**。
 >
 > 自 1998 年以来，总统推行的政策偏向穷人和工人阶级，包括对基本食品（豆类、鸡肉、糖等）实施价格管制。
 
-![[slide_18.png]]
+![slide 18](Assets/slide_18.png)
 
 > [!warning] 委内瑞拉价格管制的后果
 > 这些政策导致了：
@@ -205,7 +205,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 3.1 基本概念
 
-![[slide_19.png]]
+![slide 19](Assets/slide_19.png)
 
 > [!info] 价格下限 (Price Floor)
 > **Price floor** 是政府设定的**高于均衡价格**的最低合法价格。有时政府干预是为了**推高**市场价格而不是压低它。价格下限旨在帮助市场中的**卖方**（例如通过为农产品设定价格下限来帮助农民）。
@@ -216,7 +216,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 3.2 价格下限的效果 —— 黄油市场
 
-![[slide_20.png]]
+![slide 20](Assets/slide_20.png)
 
 当政府将黄油价格下限定在 **$1.20/磅**（高于均衡价格）时：
 - **需求量**下降至 **900 万磅**（点 A）
@@ -229,11 +229,11 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 > | **Binding (有约束力)** | 高于均衡价格 | 造成过剩 (Surplus)；部分卖方无法卖出他们想卖的量；政府通常需要授予许可证或买入（然后销毁）过剩产品 |
 > | **Not Binding (无约束力)** | 低于均衡价格 | 对市场没有影响 |
 
-![[slide_21.png]]
+![slide 21](Assets/slide_21.png)
 
 ### 3.3 价格下限如何导致低效率
 
-![[slide_22.png]]
+![slide 22](Assets/slide_22.png)
 
 > [!warning] 价格下限导致的五类低效率
 > 1. **Inefficiently Low Quantity (低效的低交易量)**: 交易量低于均衡水平
@@ -244,13 +244,13 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 3.4 价格下限导致低效的低交易量
 
-![[slide_23.png]]
+![slide 23](Assets/slide_23.png)
 
 价格下限将需求量压低至市场均衡量之下，同样造成无谓损失 (Deadweight Loss)。图中阴影三角形显示了由于交易量过低而损失的福利。
 
 ### 3.5 低效分配与低效高质
 
-![[slide_24.png]]
+![slide 24](Assets/slide_24.png)
 
 > [!info] 两个关键的低效率
 > - **Inefficient Allocation of Sales Among Sellers**: 价格下限导致对卖方销售的无效分配——那些愿意以最低价格卖出商品的卖方并不总是真正卖出的人。
@@ -258,7 +258,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 3.6 注意事项：上限、下限与数量
 
-![[slide_25.png]]
+![slide 25](Assets/slide_25.png)
 
 > [!warning] PITFALLS: Ceilings, Floors, and Quantities
 > - **Price ceiling** 将价格**向下**推 → 更少的卖方愿意卖
@@ -273,9 +273,9 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 3.7 最低工资 (The Minimum Wage)
 
-![[slide_26.png]]
+![slide 26](Assets/slide_26.png)
 
-![[slide_27.png]]
+![slide 27](Assets/slide_27.png)
 
 > [!info] 最低工资 (Minimum Wage) 的市场分析
 > - 市场：**劳动力市场 (Market for Labor)**
@@ -289,7 +289,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 >   4. 有工作的工人获得**更高收入**
 >   5. 找不到工作的工人获得**更低收入**
 
-![[slide_28.png]]
+![slide 28](Assets/slide_28.png)
 
 > [!info] 最低工资对不同群体的影响
 > | 群体 | 影响 | 原因 |
@@ -301,7 +301,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 3.8 南欧的"黑色劳动"
 
-![[slide_29.png]]
+![slide 29](Assets/slide_29.png)
 
 > [!question] Economics in Action: "Black Labor" in Southern Europe
 > 许多欧洲国家的最低工资非常高。这种价格下限造成的持续过剩表现为**高失业率**。
@@ -319,7 +319,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 4.1 基本概念
 
-![[slide_30.png]]
+![slide 30](Assets/slide_30.png)
 
 > [!info] 数量管制 (Quantity Controls / Quotas)
 > **Quantity control / Quota** 是对可以买卖的某种商品数量的**上限 (upper limit)**。被合法允许交易的总量称为 **Quota Limit**。
@@ -333,7 +333,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 4.2 出租车市场：无政府干预时的均衡
 
-![[slide_31.png]]
+![slide 31](Assets/slide_31.png)
 
 在没有政府干预的情况下，出租车市场在点 E 处达到均衡：**每年 1000 万次乘车**，每次车费 **$5**。
 
@@ -353,7 +353,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 4.3 配额对出租车市场的影响
 
-![[slide_32.png]]
+![slide 32](Assets/slide_32.png)
 
 政府通过只出售 **800 万** 张牌照来实施配额（以黑色竖线表示）：
 
@@ -366,7 +366,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 4.4 数量管制的解剖学
 
-![[slide_33.png]]
+![slide 33](Assets/slide_33.png)
 
 > [!info] Quota Rent (配额租金)
 > 数量管制（配额）在 Demand Price 和 Supply Price 之间打入了一个 **楔子 (Wedge)**：买方支付的价格最终**高于**卖方收到的价格。
@@ -379,7 +379,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 4.5 消费配给券与生产许可证
 
-![[slide_34.png]]
+![slide 34](Assets/slide_34.png)
 
 > [!info] 两种常见的数量管制工具
 > - **Consumption Ration Coupons (消费配给券)**: 通常在战争或其他社会动荡导致广泛短缺的时期发行。
@@ -387,7 +387,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 4.6 数量管制的成本
 
-![[slide_35.png]]
+![slide 35](Assets/slide_35.png)
 
 > [!warning] 数量管制的代价
 > 1. **互利的交易无法发生** (Mutually beneficial transactions don't occur)
@@ -400,7 +400,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ### 4.7 案例分析：新泽西海岸的蛤蜊配额
 
-![[slide_36.png]]
+![slide 36](Assets/slide_36.png)
 
 > [!question] Economics in Action: The Clams of Jersey Shore
 >
@@ -418,7 +418,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ## 5. 政府管制的共同效应
 
-![[slide_37.png]]
+![slide 37](Assets/slide_37.png)
 
 > [!info] The Common Effect of Government Controls
 > **Price ceilings, price floors, and quotas — all three decrease the amount traded (if they are binding) and create deadweight loss.**
@@ -437,22 +437,22 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ## 6. 本章总结 (Summary)
 
-![[slide_38.png]]
+![slide 38](Assets/slide_38.png)
 
 > [!info] Summary 1: 政府干预的基本逻辑
 > 即使市场是有效率的，政府也常常干预以追求更大的公平性，或取悦某个有影响力的利益集团。干预形式包括价格管制或数量管制，两者都会产生**可预测且不受欢迎的副作用**：各种形式的低效率和非法活动。
 
-![[slide_39.png]]
+![slide 39](Assets/slide_39.png)
 
 > [!info] Summary 2: 价格上限 (Price Ceiling)
 > 价格上限（低于均衡价格的最高市场价格）使成功的买家受益，但导致**持续的短缺 (persistent shortages)**。因为价格维持在均衡价格之下，需求量增加而供给量减少。这导致了可预测的问题：**低效的低交易量、对消费者的无效分配、资源浪费、低效的低质量**，以及鼓励**非法活动和黑市**。
 
-![[slide_40.png]]
+![slide 40](Assets/slide_40.png)
 
 > [!info] Summary 3: 价格下限 (Price Floor)
 > 价格下限（高于均衡价格的最低市场价格）使成功的卖方受益，但导致**持续的过剩 (persistent surplus)**。价格下限导致的低效率包括：**低效的低交易量、对卖方销售的无效分配、资源浪费、低效的高质量**。同样鼓励非法活动和黑市。最广为人知的价格下限是**最低工资 (Minimum Wage)**，但价格下限也常用于农产品。
 
-![[slide_41.png]]
+![slide 41](Assets/slide_41.png)
 
 > [!info] Summary 4: 数量管制 (Quantity Controls / Quotas)
 > 数量管制（配额）限制可以买卖的商品数量。允许销售的总量是 **Quota Limit**。政府向个人颁发 **Licenses**——销售给定数量商品的权利。配额在 **Demand Price** 和 **Supply Price** 之间打入了一个 **Wedge**；这个楔子等于 **Quota Rent**。数量管制同样鼓励非法活动。
@@ -461,7 +461,7 @@ textbook: "Microeconomics, Third Edition — Paul Krugman & Robin Wells"
 
 ## 7. 关键词汇 (Key Terms)
 
-![[slide_42.png]]
+![slide 42](Assets/slide_42.png)
 
 | English Term | 中文翻译 | 简要定义 |
 |:---|:---|:---|
