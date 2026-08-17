@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip list *)",
+      "Read(//c/Program Files/LibreOffice/program/**)",
+      "Read(//c/Program Files \\(x86\\)/LibreOffice/program/**)",
+      "Bash(python3 -c \"import win32com.client; print\\('win32com available'\\)\")",
+      "Bash(python -c \"import win32com.client; print\\('win32com available'\\)\")",
+      "Bash(python extract_pptx.py)",
+      "Bash(PYTHONUTF8=1 python extract_pptx.py)",
+      "Bash(python *)"
+    ]
+  }
+}

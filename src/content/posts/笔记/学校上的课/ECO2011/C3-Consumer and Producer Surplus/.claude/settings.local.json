@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import pptx; print\\('python-pptx OK'\\)\")",
+      "Bash(python3 -c \"import fitz; print\\('PyMuPDF OK'\\)\")",
+      "Bash(/f/python/python -m pip list)",
+      "Bash(where libreoffice *)",
+      "Bash(powershell -Command \"Get-Command powerpoint.exe -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(/f/python/python *)",
+      "Bash(pip list *)",
+      "Bash(python *)"
+    ]
+  }
+}
