@@ -64,6 +64,45 @@ function comparePathNaturally(slugA: string, slugB: string) {
 	return 0;
 }
 
+type Eco2011ArchiveKey = {
+	seriesPath: string;
+	unit: number | null;
+};
+
+function getEco2011ArchiveKey(slug: string): Eco2011ArchiveKey | null {
+	const segments = slug.split("/");
+	const seriesIndex = segments.findIndex(
+		(segment) => decodeURIComponent(segment).toLowerCase() === "eco2011",
+	);
+	if (seriesIndex === -1) return null;
+
+	const unitSegment = decodeURIComponent(segments[seriesIndex + 1] ?? "");
+	const unitMatch = unitSegment.match(/^c[\s_-]*(\d+)(?:[\s_-]|$)/iu);
+
+	return {
+		seriesPath: segments.slice(0, seriesIndex + 1).join("/").toLowerCase(),
+		unit: unitMatch ? Number(unitMatch[1]) : null,
+	};
+}
+
+function compareEco2011ArchivePosts(
+	a: CollectionEntry<"posts">,
+	b: CollectionEntry<"posts">,
+) {
+	const keyA = getEco2011ArchiveKey(a.slug);
+	const keyB = getEco2011ArchiveKey(b.slug);
+	if (!keyA || !keyB || keyA.seriesPath !== keyB.seriesPath) return 0;
+
+	if (keyA.unit !== null && keyB.unit !== null) {
+		return keyA.unit - keyB.unit;
+	}
+	if (keyA.unit !== null) return -1;
+	if (keyB.unit !== null) return 1;
+
+	const dateDifference = b.data.published.getTime() - a.data.published.getTime();
+	return dateDifference || comparePathNaturally(a.slug, b.slug);
+}
+
 export async function getSortedPosts() {
 	const sorted = await getRawSortedPosts();
 
@@ -86,7 +125,10 @@ export async function getSortedPostsList(): Promise<PostForList[]> {
 	const sortedFullPosts = await getRawSortedPosts();
 	sortedFullPosts.sort((a, b) => {
 		const yearDifference = b.data.published.getFullYear() - a.data.published.getFullYear();
-		return yearDifference || comparePathNaturally(a.slug, b.slug);
+		if (yearDifference) return yearDifference;
+
+		const eco2011Difference = compareEco2011ArchivePosts(a, b);
+		return eco2011Difference || comparePathNaturally(a.slug, b.slug);
 	});
 
 	// delete post.body
