@@ -2,6 +2,7 @@
 published: 2026-08-11
 description: ""
 category: "自己学的东西"
+subcategory: "Reinforcement Learning"
 draft: false
 title: "Chapter 3 - Optimal State Values and Bellman Optimality Equation"
 aliases:
