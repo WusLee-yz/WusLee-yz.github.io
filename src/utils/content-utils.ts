@@ -27,6 +27,19 @@ const naturalCollator = new Intl.Collator("zh-CN", {
 	sensitivity: "base",
 });
 
+const CATEGORY_ORDER = ["学校上的课", "自己学的东西", "语言学习"];
+
+function compareCategoryOrder(a: string, b: string) {
+	const indexA = CATEGORY_ORDER.indexOf(a);
+	const indexB = CATEGORY_ORDER.indexOf(b);
+
+	if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+	if (indexA !== -1) return -1;
+	if (indexB !== -1) return 1;
+
+	return naturalCollator.compare(a, b);
+}
+
 function sequenceSegmentKey(segment: string) {
 	const decoded = decodeURIComponent(segment).replace(/\.md$/iu, "");
 	const namedSequence = decoded.match(/^(?:c|chapter|kapitel)[\s_-]*(\d+)(.*)$/iu);
@@ -239,7 +252,7 @@ export async function getCategoryList(): Promise<ParentCategory[]> {
 			count: count[parentCategory].count,
 			url: getParentCategoryUrl(parentCategory),
 			children: Object.keys(count[parentCategory].categories)
-				.sort((a, b) => naturalCollator.compare(a, b))
+				.sort(compareCategoryOrder)
 				.map((categoryName) => {
 					const category = count[parentCategory].categories[categoryName];
 					return {
