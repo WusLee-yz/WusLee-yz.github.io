@@ -21,24 +21,58 @@ export function getTagUrl(tag: string): string {
 	return url(`/archive/?tag=${encodeURIComponent(tag.trim())}`);
 }
 
-export function getCategoryUrl(category: string | null): string {
+function getParentCategoryParam(
+	parentCategory: string | null | undefined,
+): string {
+	if (parentCategory === undefined) return "";
+	return `parent=${encodeURIComponent(parentCategory?.trim() ?? "")}&`;
+}
+
+export function getParentCategoryFromSlug(slug: string): string {
+	const segments = slug.split("/");
+	if (segments.length < 2) return "";
+
+	const parentCategory = segments[0].trim();
+	try {
+		return decodeURIComponent(parentCategory);
+	} catch {
+		return parentCategory;
+	}
+}
+
+export function getParentCategoryUrl(parentCategory: string | null): string {
+	return url(
+		`/archive/?parent=${encodeURIComponent(parentCategory?.trim() ?? "")}`,
+	);
+}
+
+export function getCategoryUrl(
+	category: string | null,
+	parentCategory?: string | null,
+): string {
+	const parentParam = getParentCategoryParam(parentCategory);
 	if (
 		!category ||
 		category.trim() === "" ||
 		category.trim().toLowerCase() === i18n(I18nKey.uncategorized).toLowerCase()
 	)
-		return url("/archive/?uncategorized=true");
-	return url(`/archive/?category=${encodeURIComponent(category.trim())}`);
+		return url(`/archive/?${parentParam}uncategorized=true`);
+	return url(
+		`/archive/?${parentParam}category=${encodeURIComponent(category.trim())}`,
+	);
 }
 
 export function getSubcategoryUrl(
 	category: string | null,
 	subcategory: string | null,
+	parentCategory?: string | null,
 ): string {
-	if (!subcategory || subcategory.trim() === "") return getCategoryUrl(category);
+	if (!subcategory || subcategory.trim() === "")
+		return getCategoryUrl(category, parentCategory);
 	if (!category || category.trim() === "") return url("/archive/");
+	const parentParam = getParentCategoryParam(parentCategory);
 	return url(
-		`/archive/?category=${encodeURIComponent(category.trim())}&subcategory=${encodeURIComponent(subcategory.trim())}`,
+		`/archive/?${parentParam}category=${encodeURIComponent(category.trim())}&subcategory=${encodeURIComponent(subcategory.trim())}`,
 	);
 }
 

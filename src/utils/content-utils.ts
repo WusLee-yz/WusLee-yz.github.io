@@ -1,7 +1,12 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
-import { getCategoryUrl, getSubcategoryUrl } from "@utils/url-utils.ts";
+import {
+	getCategoryUrl,
+	getParentCategoryFromSlug,
+	getParentCategoryUrl,
+	getSubcategoryUrl,
+} from "@utils/url-utils.ts";
 
 // // Retrieve posts and sort them by publication date
 async function getRawSortedPosts() {
@@ -178,53 +183,81 @@ export type Category = {
 	children: Subcategory[];
 };
 
-export async function getCategoryList(): Promise<Category[]> {
+export type ParentCategory = {
+	value: string;
+	name: string;
+	count: number;
+	url: string;
+	children: Category[];
+};
+
+type CategoryCount = {
+	count: number;
+	subcategories: Record<string, number>;
+};
+
+type ParentCategoryCount = {
+	count: number;
+	categories: Record<string, CategoryCount>;
+};
+
+export async function getCategoryList(): Promise<ParentCategory[]> {
 	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
 		return import.meta.env.PROD ? data.draft !== true : true;
 	});
-	const count: Record<string, { count: number; subcategories: Record<string, number> }> = {};
+	const count: Record<string, ParentCategoryCount> = {};
+	const uncategorizedName = i18n(I18nKey.uncategorized);
+
 	allBlogPosts.forEach((post) => {
-		if (!post.data.category) {
-			const ucKey = i18n(I18nKey.uncategorized);
-			count[ucKey] ??= { count: 0, subcategories: {} };
-			count[ucKey].count++;
-			return;
-		}
+		const parentCategory = getParentCategoryFromSlug(post.slug);
+		const categoryName = post.data.category?.trim() || uncategorizedName;
 
-		const categoryName =
-			typeof post.data.category === "string"
-				? post.data.category.trim()
-				: String(post.data.category).trim();
+		count[parentCategory] ??= { count: 0, categories: {} };
+		count[parentCategory].count++;
 
-		count[categoryName] ??= { count: 0, subcategories: {} };
-		count[categoryName].count++;
+		count[parentCategory].categories[categoryName] ??= {
+			count: 0,
+			subcategories: {},
+		};
+		const category = count[parentCategory].categories[categoryName];
+		category.count++;
 
 		const subcategoryName = post.data.subcategory?.trim();
 		if (subcategoryName) {
-			count[categoryName].subcategories[subcategoryName] =
-				(count[categoryName].subcategories[subcategoryName] ?? 0) + 1;
+			category.subcategories[subcategoryName] =
+				(category.subcategories[subcategoryName] ?? 0) + 1;
 		}
 	});
 
-	const lst = Object.keys(count).sort((a, b) => {
-		return a.toLowerCase().localeCompare(b.toLowerCase());
-	});
-
-	const ret: Category[] = [];
-	for (const c of lst) {
-		const children = Object.keys(count[c].subcategories)
-			.sort((a, b) => naturalCollator.compare(a, b))
-			.map((subcategory) => ({
-				name: subcategory,
-				count: count[c].subcategories[subcategory],
-				url: getSubcategoryUrl(c, subcategory),
-			}));
-		ret.push({
-			name: c,
-			count: count[c].count,
-			url: getCategoryUrl(c),
-			children,
-		});
-	}
-	return ret;
+	return Object.keys(count)
+		.sort((a, b) =>
+			naturalCollator.compare(a || uncategorizedName, b || uncategorizedName),
+		)
+		.map((parentCategory) => ({
+			value: parentCategory,
+			name: parentCategory || uncategorizedName,
+			count: count[parentCategory].count,
+			url: getParentCategoryUrl(parentCategory),
+			children: Object.keys(count[parentCategory].categories)
+				.sort((a, b) => naturalCollator.compare(a, b))
+				.map((categoryName) => {
+					const category = count[parentCategory].categories[categoryName];
+					return {
+						name: categoryName,
+						count: category.count,
+						url: getCategoryUrl(categoryName, parentCategory),
+						children: Object.keys(category.subcategories)
+							.sort((a, b) => naturalCollator.compare(a, b))
+							.map((subcategory) => ({
+								name: subcategory,
+								count: category.subcategories[subcategory],
+								url: getSubcategoryUrl(
+									categoryName,
+									subcategory,
+									parentCategory,
+								),
+							})),
+					};
+				}),
+		}));
 }

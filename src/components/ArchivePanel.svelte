@@ -3,15 +3,20 @@ import { onMount } from "svelte";
 
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
-import { getPostUrlBySlug } from "../utils/url-utils";
+import {
+	getParentCategoryFromSlug,
+	getPostUrlBySlug,
+} from "../utils/url-utils";
 
 export let tags: string[] = [];
+export let parentCategories: string[] = [];
 export let categories: string[] = [];
 export let subcategories: string[] = [];
 export let sortedPosts: Post[] = [];
 
 const params = new URLSearchParams(window.location.search);
 tags = params.has("tag") ? params.getAll("tag") : [];
+parentCategories = params.has("parent") ? params.getAll("parent") : [];
 categories = params.has("category") ? params.getAll("category") : [];
 subcategories = params.has("subcategory") ? params.getAll("subcategory") : [];
 const uncategorized = params.get("uncategorized");
@@ -52,6 +57,12 @@ onMount(async () => {
 			(post) =>
 				Array.isArray(post.data.tags) &&
 				post.data.tags.some((tag) => tags.includes(tag)),
+		);
+	}
+
+	if (parentCategories.length > 0) {
+		filteredPosts = filteredPosts.filter((post) =>
+			parentCategories.includes(getParentCategoryFromSlug(post.slug)),
 		);
 	}
 
