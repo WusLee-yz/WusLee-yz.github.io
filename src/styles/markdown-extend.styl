@@ -243,3 +243,72 @@ a.card-github.fetch-error
   transition-property: all
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
   transition-duration: 0.15s
+
+.custom-md
+  .music-player
+    display: grid
+    grid-template-columns: 6rem minmax(0, 1fr)
+    align-items: center
+    gap: 1rem
+    margin: 1.5rem 0
+    padding: 1rem
+    border: 1px solid var(--line-divider)
+    border-radius: var(--radius-large)
+    background: var(--license-block-bg)
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06)
+
+  .music-player-cover
+    width: 6rem
+    height: 6rem
+    margin: 0
+    border-radius: 0.75rem
+    object-fit: cover
+    box-shadow: 0 0.35rem 0.9rem rgba(0, 0, 0, 0.18)
+
+  .music-player-cover-placeholder
+    display: flex
+    align-items: center
+    justify-content: center
+    background: var(--btn-regular-bg)
+    color: var(--primary)
+    font-size: 2rem
+
+  .music-player-body
+    min-width: 0
+
+  .music-player-title
+    overflow: hidden
+    color: var(--tw-prose-headings)
+    font-size: 1.1rem
+    font-weight: 700
+    line-height: 1.4
+    text-overflow: ellipsis
+    white-space: nowrap
+
+  .music-player-meta
+    overflow: hidden
+    margin-top: 0.15rem
+    color: var(--tw-prose-body)
+    font-size: 0.875rem
+    line-height: 1.4
+    opacity: 0.72
+    text-overflow: ellipsis
+    white-space: nowrap
+
+  .music-player-controls
+    display: block
+    width: 100%
+    height: 2.5rem
+    margin-top: 0.75rem
+    color-scheme: light dark
+
+@media (max-width: 480px)
+  .custom-md
+    .music-player
+      grid-template-columns: 4.5rem minmax(0, 1fr)
+      gap: 0.75rem
+      padding: 0.75rem
+
+    .music-player-cover
+      width: 4.5rem
+      height: 4.5rem
