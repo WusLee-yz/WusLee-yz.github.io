@@ -3,7 +3,12 @@ import { Icon } from "astro-icon/components";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import { formatDateToYYYYMMDD } from "../utils/date-utils";
-import { getCategoryUrl, getSubcategoryUrl, getTagUrl } from "../utils/url-utils";
+import {
+	getCategoryUrl,
+	getParentCategoryFromSlug,
+	getSubcategoryUrl,
+	getTagUrl,
+} from "../utils/url-utils";
 
 interface Props {
 	class: string;
@@ -12,6 +17,7 @@ interface Props {
 	tags: string[];
 	category: string | null;
 	subcategory?: string | null;
+	slug?: string;
 	hideTagsForMobile?: boolean;
 	hideUpdateDate?: boolean;
 }
@@ -21,10 +27,13 @@ const {
 	tags,
 	category,
 	subcategory,
+	slug,
 	hideTagsForMobile = false,
 	hideUpdateDate = false,
 } = Astro.props;
 const className = Astro.props.class;
+const parentCategory =
+	slug === undefined ? undefined : getParentCategoryFromSlug(slug);
 ---
 
 <div class:list={["flex flex-wrap text-neutral-500 dark:text-neutral-400 items-center gap-4 gap-x-4 gap-y-2", className]}>
@@ -55,7 +64,7 @@ const className = Astro.props.class;
             <Icon name="material-symbols:book-2-outline-rounded" class="text-xl"></Icon>
         </div>
         <div class="flex flex-row flex-nowrap items-center">
-            <a href={getCategoryUrl(category)} aria-label={`View all posts in the ${category} category`}
+            <a href={getCategoryUrl(category, parentCategory)} aria-label={`View all posts in the ${category} category`}
                class="link-lg transition text-50 text-sm font-medium
                             hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
                 {category || i18n(I18nKey.uncategorized)}
@@ -63,7 +72,7 @@ const className = Astro.props.class;
             {category && subcategory && (
                 <>
                     <div class="mx-1.5 text-[var(--meta-divider)] text-sm">/</div>
-                    <a href={getSubcategoryUrl(category, subcategory)} aria-label={`View all posts in the ${category} / ${subcategory} category`}
+                    <a href={getSubcategoryUrl(category, subcategory, parentCategory)} aria-label={`View all posts in the ${category} / ${subcategory} category`}
                        class="link-lg transition text-50 text-sm font-medium
                                     hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
                         {subcategory}

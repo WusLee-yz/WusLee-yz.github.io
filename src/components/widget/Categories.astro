@@ -1,17 +1,21 @@
 ---
+import { Icon } from "astro-icon/components";
 import I18nKey from "../../i18n/i18nKey";
 import { i18n } from "../../i18n/translation";
 import { getCategoryList } from "../../utils/content-utils";
-import { Icon } from "astro-icon/components";
 import ButtonLink from "../control/ButtonLink.astro";
 import WidgetLayout from "./WidgetLayout.astro";
 
-const categories = await getCategoryList();
+const parentCategories = await getCategoryList();
+const visibleNodeCount = parentCategories.reduce(
+	(total, parentCategory) => total + 1 + parentCategory.children.length,
+	0,
+);
 
 const COLLAPSED_HEIGHT = "7.5rem";
 const COLLAPSE_THRESHOLD = 5;
 
-const isCollapsed = categories.length >= COLLAPSE_THRESHOLD;
+const isCollapsed = visibleNodeCount >= COLLAPSE_THRESHOLD;
 
 interface Props {
 	class?: string;
@@ -25,50 +29,80 @@ const style = Astro.props.style;
                 class={className} style={style}
 >
     <category-tree>
-        {categories.map((c, index) => c.children.length > 0 ? (
-            <div class="category-node" data-category={c.name.trim()}>
+        {parentCategories.map((parentCategory, parentIndex) => (
+            <div class="category-node" data-category={parentCategory.name.trim()}>
                 <div class="flex items-center gap-1">
                     <div class="min-w-0 flex-1">
                         <ButtonLink
-                            url={c.url}
-                            badge={String(c.count)}
-                            label={`View all posts in the ${c.name.trim()} category`}
+                            url={parentCategory.url}
+                            badge={String(parentCategory.count)}
+                            label={`查看“${parentCategory.name.trim()}”中的全部文章`}
                         >
-                            {c.name.trim()}
+                            {parentCategory.name.trim()}
                         </ButtonLink>
                     </div>
                     <button
                         type="button"
                         class="category-toggle btn-plain flex h-10 w-10 shrink-0 items-center justify-center rounded-lg"
-                        aria-expanded="false"
-                        aria-controls={`category-children-${index}`}
-                        aria-label={`展开 ${c.name.trim()} 的子分类`}
+                        aria-expanded="true"
+                        aria-controls={`parent-category-children-${parentIndex}`}
+                        aria-label={`收起 ${parentCategory.name.trim()} 的子分类`}
                     >
-                        <Icon name="material-symbols:chevron-right-rounded" class="category-chevron text-xl transition-transform" />
+                        <Icon name="material-symbols:chevron-right-rounded" class="category-chevron rotate-90 text-xl transition-transform" />
                     </button>
                 </div>
-                <div id={`category-children-${index}`} class="category-children ml-5 border-l border-[var(--line-divider)] pl-2" hidden>
-                    {c.children.map((child) => (
-                        <div data-subcategory={child.name.trim()}>
-                            <ButtonLink
-                                url={child.url}
-                                badge={String(child.count)}
-                                label={`View all posts in the ${c.name.trim()} / ${child.name.trim()} category`}
-                            >
-                                {child.name.trim()}
-                            </ButtonLink>
+                <div id={`parent-category-children-${parentIndex}`} class="category-children ml-5 border-l border-[var(--line-divider)] pl-2">
+                    {parentCategory.children.map((category, categoryIndex) => category.children.length > 0 ? (
+                        <div class="category-node" data-category={category.name.trim()}>
+                            <div class="flex items-center gap-1">
+                                <div class="min-w-0 flex-1">
+                                    <ButtonLink
+                                        url={category.url}
+                                        badge={String(category.count)}
+                                        label={`查看“${parentCategory.name.trim()} / ${category.name.trim()}”分类中的全部文章`}
+                                    >
+                                        {category.name.trim()}
+                                    </ButtonLink>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="category-toggle btn-plain flex h-10 w-10 shrink-0 items-center justify-center rounded-lg"
+                                    aria-expanded="false"
+                                    aria-controls={`category-children-${parentIndex}-${categoryIndex}`}
+                                    aria-label={`展开 ${category.name.trim()} 的子分类`}
+                                >
+                                    <Icon name="material-symbols:chevron-right-rounded" class="category-chevron text-xl transition-transform" />
+                                </button>
+                            </div>
+                            <div id={`category-children-${parentIndex}-${categoryIndex}`} class="category-children ml-5 border-l border-[var(--line-divider)] pl-2" hidden>
+                                {category.children.map((subcategory) => (
+                                    <div
+                                        data-parent-category={parentCategory.value}
+                                        data-category={category.name.trim()}
+                                        data-subcategory={subcategory.name.trim()}
+                                    >
+                                        <ButtonLink
+                                            url={subcategory.url}
+                                            badge={String(subcategory.count)}
+                                            label={`查看“${parentCategory.name.trim()} / ${category.name.trim()} / ${subcategory.name.trim()}”分类中的全部文章`}
+                                        >
+                                            {subcategory.name.trim()}
+                                        </ButtonLink>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
+                    ) : (
+                        <ButtonLink
+                            url={category.url}
+                            badge={String(category.count)}
+                            label={`查看“${parentCategory.name.trim()} / ${category.name.trim()}”分类中的全部文章`}
+                        >
+                            {category.name.trim()}
+                        </ButtonLink>
                     ))}
                 </div>
             </div>
-        ) : (
-            <ButtonLink
-                url={c.url}
-                badge={String(c.count)}
-                label={`View all posts in the ${c.name.trim()} category`}
-            >
-                {c.name.trim()}
-            </ButtonLink>
         ))}
     </category-tree>
 </WidgetLayout>
@@ -99,10 +133,16 @@ const style = Astro.props.style;
                 });
             });
 
-            const activeSubcategory = new URLSearchParams(window.location.search).get("subcategory");
+            const params = new URLSearchParams(window.location.search);
+            const activeParentCategory = params.get("parent");
+            const activeCategory = params.get("category");
+            const activeSubcategory = params.get("subcategory");
             if (activeSubcategory) {
                 const activeChild = Array.from(this.querySelectorAll<HTMLElement>("[data-subcategory]")).find(
-                    (child) => child.dataset.subcategory === activeSubcategory,
+                    (child) =>
+                        child.dataset.subcategory === activeSubcategory &&
+                        (activeParentCategory === null || child.dataset.parentCategory === activeParentCategory) &&
+                        (activeCategory === null || child.dataset.category === activeCategory),
                 );
                 const button = activeChild
                     ?.closest<HTMLElement>(".category-node")
