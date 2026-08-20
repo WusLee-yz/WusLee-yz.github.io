@@ -62,6 +62,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:github",
 			url: "https://github.com/WusLee-yz",
 		},
+		{
+			name: "小红书",
+			icon: "simple-icons:xiaohongshu",
+			url: "https://www.xiaohongshu.com/user/profile/63d2b8160000000027028c0d",
+		},
 	],
 };
 
