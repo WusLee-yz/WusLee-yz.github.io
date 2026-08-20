@@ -3,7 +3,7 @@ title: "ECO2011 C5：Elasticity（弹性）"
 published: 2026-06-15
 description: ""
 category: "学校上的课"
-subcategory: "ECO2011"
+subcategory: "ECO2011 Macroeconomics"
 draft: false
 tags:
   - economics

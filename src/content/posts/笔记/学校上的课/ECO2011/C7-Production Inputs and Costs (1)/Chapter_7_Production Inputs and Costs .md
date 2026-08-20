@@ -3,7 +3,7 @@ title: "ECO2011 C7：Inputs and Costs（投入与成本）"
 published: 2026-06-23
 description: ""
 category: "学校上的课"
-subcategory: "ECO2011"
+subcategory: "ECO2011 Macroeconomics"
 draft: false
 tags:
   - microeconomics

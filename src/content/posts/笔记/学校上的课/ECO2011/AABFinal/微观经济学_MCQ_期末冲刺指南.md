@@ -3,7 +3,7 @@ title: "ECO2011 期末复习：Multiple Choice Questions"
 published: 2026-07-21
 description: ""
 category: "学校上的课"
-subcategory: "ECO2011"
+subcategory: "ECO2011 Macroeconomics"
 draft: false
 ---
 

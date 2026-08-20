@@ -3,7 +3,7 @@ title: "ECO2011 期中复习：考试指南"
 published: 2026-06-24
 description: ""
 category: "学校上的课"
-subcategory: "ECO2011"
+subcategory: "ECO2011 Macroeconomics"
 draft: false
 ---
 
