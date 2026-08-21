@@ -3,7 +3,7 @@ title: "ECO2011 C2：Supply and Demand（供给与需求）"
 published: 2026-06-04
 description: ""
 category: "学校上的课"
-subcategory: "ECO2011 Macroeconomics"
+subcategory: "ECO2011 Microeconomics"
 draft: false
 tags:
   - ECO2011

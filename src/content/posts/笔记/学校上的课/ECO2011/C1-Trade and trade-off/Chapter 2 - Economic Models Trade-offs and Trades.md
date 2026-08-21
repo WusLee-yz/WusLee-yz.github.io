@@ -2,7 +2,7 @@
 published: 2026-06-04
 description: ""
 category: "学校上的课"
-subcategory: "ECO2011 Macroeconomics"
+subcategory: "ECO2011 Microeconomics"
 draft: false
 title: "ECO2011 C1：Economic Models — Trade-offs and Trades"
 course: ECO2011
