@@ -5,6 +5,8 @@ import {
 	getCategoryUrl,
 	getParentCategoryFromSlug,
 	getParentCategoryUrl,
+	getSectionUrl,
+	getSeriesUrl,
 	getSubcategoryUrl,
 } from "@utils/url-utils.ts";
 
@@ -187,6 +189,20 @@ export type Subcategory = {
 	name: string;
 	count: number;
 	url: string;
+	children: Series[];
+};
+
+export type Series = {
+	name: string;
+	count: number;
+	url: string;
+	children: Section[];
+};
+
+export type Section = {
+	name: string;
+	count: number;
+	url: string;
 };
 
 export type Category = {
@@ -206,7 +222,17 @@ export type ParentCategory = {
 
 type CategoryCount = {
 	count: number;
-	subcategories: Record<string, number>;
+	subcategories: Record<string, SubcategoryCount>;
+};
+
+type SubcategoryCount = {
+	count: number;
+	series: Record<string, SeriesCount>;
+};
+
+type SeriesCount = {
+	count: number;
+	sections: Record<string, number>;
 };
 
 type ParentCategoryCount = {
@@ -237,8 +263,21 @@ export async function getCategoryList(): Promise<ParentCategory[]> {
 
 		const subcategoryName = post.data.subcategory?.trim();
 		if (subcategoryName) {
-			category.subcategories[subcategoryName] =
-				(category.subcategories[subcategoryName] ?? 0) + 1;
+			category.subcategories[subcategoryName] ??= { count: 0, series: {} };
+			const subcategory = category.subcategories[subcategoryName];
+			subcategory.count++;
+
+			const seriesName = post.data.series?.trim();
+			if (seriesName) {
+				subcategory.series[seriesName] ??= { count: 0, sections: {} };
+				const series = subcategory.series[seriesName];
+				series.count++;
+
+				const sectionName = post.data.section?.trim();
+				if (sectionName) {
+					series.sections[sectionName] = (series.sections[sectionName] ?? 0) + 1;
+				}
+			}
 		}
 	});
 
@@ -261,15 +300,46 @@ export async function getCategoryList(): Promise<ParentCategory[]> {
 						url: getCategoryUrl(categoryName, parentCategory),
 						children: Object.keys(category.subcategories)
 							.sort((a, b) => naturalCollator.compare(a, b))
-							.map((subcategory) => ({
-								name: subcategory,
-								count: category.subcategories[subcategory],
+							.map((subcategoryName) => {
+								const subcategory = category.subcategories[subcategoryName];
+								return {
+								name: subcategoryName,
+								count: subcategory.count,
 								url: getSubcategoryUrl(
 									categoryName,
-									subcategory,
+									subcategoryName,
 									parentCategory,
 								),
-							})),
+								children: Object.keys(subcategory.series)
+									.sort((a, b) => naturalCollator.compare(a, b))
+									.map((seriesName) => {
+										const series = subcategory.series[seriesName];
+										return {
+											name: seriesName,
+											count: series.count,
+											url: getSeriesUrl(
+												categoryName,
+												subcategoryName,
+												seriesName,
+												parentCategory,
+											),
+											children: Object.keys(series.sections)
+												.sort((a, b) => naturalCollator.compare(a, b))
+												.map((sectionName) => ({
+													name: sectionName,
+													count: series.sections[sectionName],
+													url: getSectionUrl(
+														categoryName,
+														subcategoryName,
+														seriesName,
+														sectionName,
+														parentCategory,
+													),
+												})),
+										};
+									}),
+								};
+							}),
 					};
 				}),
 		}));

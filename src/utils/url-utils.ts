@@ -76,6 +76,37 @@ export function getSubcategoryUrl(
 	);
 }
 
+export function getSeriesUrl(
+	category: string | null,
+	subcategory: string | null,
+	series: string | null,
+	parentCategory?: string | null,
+): string {
+	if (!series || series.trim() === "")
+		return getSubcategoryUrl(category, subcategory, parentCategory);
+	if (!category || !subcategory) return url("/archive/");
+	const parentParam = getParentCategoryParam(parentCategory);
+	return url(
+		`/archive/?${parentParam}category=${encodeURIComponent(category.trim())}&subcategory=${encodeURIComponent(subcategory.trim())}&series=${encodeURIComponent(series.trim())}`,
+	);
+}
+
+export function getSectionUrl(
+	category: string | null,
+	subcategory: string | null,
+	series: string | null,
+	section: string | null,
+	parentCategory?: string | null,
+): string {
+	if (!section || section.trim() === "")
+		return getSeriesUrl(category, subcategory, series, parentCategory);
+	if (!category || !subcategory || !series) return url("/archive/");
+	const parentParam = getParentCategoryParam(parentCategory);
+	return url(
+		`/archive/?${parentParam}category=${encodeURIComponent(category.trim())}&subcategory=${encodeURIComponent(subcategory.trim())}&series=${encodeURIComponent(series.trim())}&section=${encodeURIComponent(section.trim())}`,
+	);
+}
+
 export function getDir(path: string): string {
 	const lastSlashIndex = path.lastIndexOf("/");
 	if (lastSlashIndex < 0) {

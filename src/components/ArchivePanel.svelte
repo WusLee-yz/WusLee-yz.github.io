@@ -12,6 +12,8 @@ export let tags: string[] = [];
 export let parentCategories: string[] = [];
 export let categories: string[] = [];
 export let subcategories: string[] = [];
+export let series: string[] = [];
+export let sections: string[] = [];
 export let sortedPosts: Post[] = [];
 
 const params = new URLSearchParams(window.location.search);
@@ -19,6 +21,8 @@ tags = params.has("tag") ? params.getAll("tag") : [];
 parentCategories = params.has("parent") ? params.getAll("parent") : [];
 categories = params.has("category") ? params.getAll("category") : [];
 subcategories = params.has("subcategory") ? params.getAll("subcategory") : [];
+series = params.has("series") ? params.getAll("series") : [];
+sections = params.has("section") ? params.getAll("section") : [];
 const uncategorized = params.get("uncategorized");
 
 interface Post {
@@ -28,6 +32,8 @@ interface Post {
 		tags: string[];
 		category?: string | null;
 		subcategory?: string | null;
+		series?: string | null;
+		section?: string | null;
 		published: Date;
 	};
 }
@@ -76,6 +82,18 @@ onMount(async () => {
 		filteredPosts = filteredPosts.filter(
 			(post) =>
 				post.data.subcategory && subcategories.includes(post.data.subcategory),
+		);
+	}
+
+	if (series.length > 0) {
+		filteredPosts = filteredPosts.filter(
+			(post) => post.data.series && series.includes(post.data.series),
+		);
+	}
+
+	if (sections.length > 0) {
+		filteredPosts = filteredPosts.filter(
+			(post) => post.data.section && sections.includes(post.data.section),
 		);
 	}
 

@@ -6,6 +6,8 @@ import { formatDateToYYYYMMDD } from "../utils/date-utils";
 import {
 	getCategoryUrl,
 	getParentCategoryFromSlug,
+	getSectionUrl,
+	getSeriesUrl,
 	getSubcategoryUrl,
 	getTagUrl,
 } from "../utils/url-utils";
@@ -17,6 +19,8 @@ interface Props {
 	tags: string[];
 	category: string | null;
 	subcategory?: string | null;
+	series?: string | null;
+	section?: string | null;
 	slug?: string;
 	hideTagsForMobile?: boolean;
 	hideUpdateDate?: boolean;
@@ -27,6 +31,8 @@ const {
 	tags,
 	category,
 	subcategory,
+	series,
+	section,
 	slug,
 	hideTagsForMobile = false,
 	hideUpdateDate = false,
@@ -63,7 +69,7 @@ const parentCategory =
         >
             <Icon name="material-symbols:book-2-outline-rounded" class="text-xl"></Icon>
         </div>
-        <div class="flex flex-row flex-nowrap items-center">
+        <div class="flex flex-row flex-wrap items-center">
             <a href={getCategoryUrl(category, parentCategory)} aria-label={`View all posts in the ${category} category`}
                class="link-lg transition text-50 text-sm font-medium
                             hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
@@ -76,6 +82,26 @@ const parentCategory =
                        class="link-lg transition text-50 text-sm font-medium
                                     hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
                         {subcategory}
+                    </a>
+                </>
+            )}
+            {category && subcategory && series && (
+                <>
+                    <div class="mx-1.5 text-[var(--meta-divider)] text-sm">/</div>
+                    <a href={getSeriesUrl(category, subcategory, series, parentCategory)} aria-label={`View all posts in the ${series} series`}
+                       class="link-lg transition text-50 text-sm font-medium
+                                    hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
+                        {series}
+                    </a>
+                </>
+            )}
+            {category && subcategory && series && section && (
+                <>
+                    <div class="mx-1.5 text-[var(--meta-divider)] text-sm">/</div>
+                    <a href={getSectionUrl(category, subcategory, series, section, parentCategory)} aria-label={`View all posts in the ${series} / ${section} section`}
+                       class="link-lg transition text-50 text-sm font-medium
+                                    hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
+                        {section}
                     </a>
                 </>
             )}

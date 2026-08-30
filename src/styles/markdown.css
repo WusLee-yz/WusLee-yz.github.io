@@ -112,6 +112,11 @@
 
     }
 
+    audio {
+        @apply my-2 block w-full max-w-xl;
+        height: 2.5rem;
+    }
+
     .katex-display-container {
         max-width: 100%;
         overflow-x: auto;
